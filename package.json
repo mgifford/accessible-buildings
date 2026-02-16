@@ -6,6 +6,7 @@
     "test:access": "pa11y-ci"
   },
   "devDependencies": {
+    "linkinator": "^7.5.3",
     "pa11y-ci": "^3.1.0"
   }
 }
