@@ -1,0 +1,54 @@
+<div class="example-card">
+    <header>
+        <h3>{{ include.example.title }}</h3>
+        <span class="badge">{{ include.example.building_type }}</span>
+    </header>
+
+    <div class="example-meta">
+        <p><strong>Country:</strong> {{ include.example.country }}</p>
+        <p><strong>Last Reviewed:</strong> {{ include.example.last_reviewed }}</p>
+    </div>
+
+    <div class="example-evaluation">
+        <h4>Toolkit Fit</h4>
+        <p>{{ include.example.evaluation_summary | truncate: 100 }}</p>
+    </div>
+
+    <footer>
+        <a href="{{ include.example.url | relative_url }}" class="button">View Rubric Evaluation</a>
+    </footer>
+</div>
+
+<style>
+    .example-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .example-card h3 {
+        margin: 0;
+    }
+
+    .example-card .badge {
+        background: #eee;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 4px;
+    }
+
+    .example-card .button {
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 0.9rem;
+    }
+</style>

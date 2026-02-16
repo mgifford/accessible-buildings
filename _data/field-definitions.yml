@@ -1,0 +1,28 @@
+# Field definitions for Building Access Guides
+# Used to ensure consistent terminology and support machine-readability.
+
+summary_fields:
+  step_free_entrance: "Whether the main entrance is accessible without steps."
+  accessible_toilets: "Availability of toilets designed for disabled users."
+  accessible_parking: "Availability of designated parking spaces."
+  quiet_space: "Presence of a dedicated sensory-friendly zone."
+
+arrival_fields:
+  nearest_transit: "Name and distance of the closest accessible transport hub."
+  drop_off_point: "Specific location for taxis or ride-share."
+  path_surface: "The material used for paths (e.g., concrete, gravel)."
+
+entry_fields:
+  door_type: "The mechanism of the door (Automatic, Manual, Power-assisted)."
+  threshold_height: "Maximum height of any threshold at the entrance."
+  intercom_height: "Mounting height of security or intercom buttons."
+
+navigation_fields:
+  lift_dimensions: "Internal dimensions of elevators (Width x Depth)."
+  route_width: "Minimum clear width of the accessible paths."
+  cane_detection: "Are all protruding objects detectable by a white cane?"
+
+facilities_fields:
+  toilet_transfer: "Side for wheelchair transfer (Left, Right, Both)."
+  changing_places: "Presence of a full Changing Places facility."
+  seating_armrests: "Availability of seating with armrests for support."

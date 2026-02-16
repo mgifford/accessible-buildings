@@ -1,0 +1,30 @@
+categories:
+  - name: "Entrances"
+    items:
+      - "Power-assisted doors operational"
+      - "Thresholds clear of debris"
+      - "Mats secure and flat"
+
+  - name: "Routes and Paths"
+    items:
+      - "Corridors/Exits clear of storage"
+      - "Minimum width (900mm+) maintained"
+      - "No trip hazards (cables/wires)"
+
+  - name: "Lifts and Ramps"
+    items:
+      - "Lifts operational and clean"
+      - "Voice announcements functional"
+      - "Handrails secure"
+
+  - name: "Signage"
+    items:
+      - "Tactile signage undamaged"
+      - "No temporary signs blocking permanent info"
+      - "High contrast maintained"
+
+  - name: "Assistive Devices"
+    items:
+      - "Hearing loops tested"
+      - "Sensory kits charged"
+      - "Staff knowledge of equipment verified"

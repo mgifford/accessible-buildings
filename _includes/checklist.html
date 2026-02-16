@@ -1,0 +1,39 @@
+<div class="maintenance-checklist">
+  {% for category in site.data.checklist.categories %}
+    <h3>{{ category.name }}</h3>
+    <ul>
+      {% for item in category.items %}
+        <li>
+          <input type="checkbox" id="{{ item | slugify }}" name="{{ item | slugify }}">
+          <label for="{{ item | slugify }}">{{ item }}</label>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
+
+<style>
+.maintenance-checklist {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.maintenance-checklist h3 {
+  margin-top: 1.5rem;
+}
+.maintenance-checklist ul {
+  list-style: none;
+  padding-left: 0;
+}
+.maintenance-checklist li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.maintenance-checklist input {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+</style>
