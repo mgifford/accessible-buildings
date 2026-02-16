@@ -1,0 +1,77 @@
+name: Accessibility Testing
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ "**" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pa11y:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install pa11y-ci
+        run: npm install -g pa11y-ci
+
+      - name: Start local server
+        run: |
+          npx http-server _site -p 4001 > /tmp/server.log 2>&1 &
+          echo $! > /tmp/server.pid
+
+      - name: Wait for server
+        run: |
+          for i in {1..15}; do
+            if curl -fsS http://127.0.0.1:4001 > /dev/null; then exit 0; fi
+            sleep 2
+          done
+          echo "Server failed to start" >&2
+          cat /tmp/server.log >&2
+          exit 1
+
+      - name: Run pa11y-ci accessibility tests
+        run: |
+          # Test key pages
+          npx pa11y-ci \
+            --sitemap http://127.0.0.1:4001/accessible-buildings/sitemap.xml \
+            --sitemap-find "https://mgifford.github.io" \
+            --sitemap-replace "http://127.0.0.1:4001" \
+            --standard WCAG2AA \
+            --timeout 30000 \
+            --threshold 0
+
+      - name: Stop server
+        if: always()
+        run: |
+          if [ -f /tmp/server.pid ]; then
+            kill "$(cat /tmp/server.pid)" || true
+          fi
+
+      - name: Upload server log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-log
+          path: /tmp/server.log
