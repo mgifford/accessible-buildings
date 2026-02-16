@@ -1,0 +1,41 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "minima";
+
+// Custom Footer Contrast Fix
+.site-footer {
+  border-top: 1px solid #ddd;
+  padding: 30px 0;
+  background-color: #ffffff !important; // Force white background
+  color: #111111 !important;
+}
+
+.footer-heading {
+  color: #111111 !important;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.site-footer p, .site-footer li, .site-footer span {
+  color: #222222 !important;
+}
+
+.site-footer a {
+  color: #005ea5 !important; // British Government style blue (high contrast)
+  text-decoration: underline !important;
+  font-weight: 600;
+}
+
+.site-footer a:hover {
+  color: #003052 !important;
+}
+
+// Ensure header nav is also clear
+.site-nav .page-link {
+  color: #111 !important;
+}
+
+.site-nav .page-link:hover {
+  text-decoration: underline;
+}

@@ -1,4 +1,4 @@
-# Building Access Guide Toolkit
+# Building Access Guide
 
 A practical framework for publishing structured, transparent physical accessibility information for buildings.
 

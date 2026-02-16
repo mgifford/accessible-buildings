@@ -1,17 +1,22 @@
-title: Building Access Guide Toolkit
-description: A practical toolkit for publishing structured, transparent information about the physical accessibility of buildings.
-baseurl: "/accessible-buildings" # the subpath of your site, e.g. /blog
+title: Building Access Guide
+description: A practical framework for communicating structured and transparent physical accessibility information.
+baseurl: "/accessible-buildings"# the subpath of your site, e.g. /blog
 url: "https://mgifford.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
+
+github_username: mgifford
+github_repo: accessible-buildings
 
 header_pages:
   - index.md
   - about/about.md
   - framework/access-chain.md
+  - framework/emergency-support.md
   - publishing/website-placement.md
   - community/examples.md
   - community/resources.md
   - community/contribute.md
+  - about/accessibility-statement.md
 
 exclude:
   - Gemfile

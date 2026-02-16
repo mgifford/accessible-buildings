@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Welcome to the Building Access Guide Toolkit
+title: Welcome to the Building Access Guide
 ---
 
-# Build Better Building Access Guides
+# Communicate Your Building Accessibility Better
 
-A practical framework for publishing structured, transparent information about the physical accessibility of buildings.
+A practical framework for sharing structured, transparent information about the physical accessibility of your building.
 
 ## The Mission
 Accessibility information should be **practical**, **sequential**, and **honest**. This toolkit provides everything you need to describe your building in a way that helps disabled visitors plan their journey with confidence.

@@ -80,7 +80,18 @@ title: Building Access Guide Template
 
 ---
 
-## 7. What Is Not Accessible
+## 7. Emergency Support
+*Critical information for safety in the event of an emergency.*
+
+- **Evacuation Plan:** [Describe the protocol for disabled visitors during an alarm]
+- **Refuge Areas:** [Locations of safe areas for wheelchair users]
+- **Accessible Alarms:** [Visual beacons available in toilets/quiet areas? (Yes/No)]
+- **Assistance Request:** [How to request a Personal Emergency Evacuation Plan (PEEP)]
+- **Emergency Contact:** [Phone/Intercom details for immediate assistance]
+
+---
+
+## 8. What Is Not Accessible
 *Honest transparency about known barriers.*
 
 - **[Area/Feature]:** [Reason for barrier and any available workaround]

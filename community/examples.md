@@ -4,7 +4,7 @@ title: Examples
 permalink: /community/examples/
 ---
 
-# Examples and Benchmarks
+# Building Access Guide Examples
 
 The best way to learn how to build a great access guide is to see how others have done it. We've collected examples of building access guides and evaluated them against our [Toolkit Rubric](#the-evaluation-rubric).
 

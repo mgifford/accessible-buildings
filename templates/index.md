@@ -9,7 +9,7 @@ permalink: /templates/
 Use these templates to build your building access guide. You can copy the raw markdown directly into your own Jekyll site or use them as a reference for your CMS.
 
 ## Main Guide
-- **[Building Access Guide]({{ "/templates/building-access-guide/" | relative_url }}):** The primary template for a comprehensive accessibility guide.
+- **[Building Access Guide Templates]({{ "/templates/building-access-guide/" | relative_url }}):** The primary template for a comprehensive accessibility guide.
 
 ## Specialized Templates
 - **[Visitor Summary]({{ "/templates/summary-template/" | relative_url }}):** A concise, "TL;DR" version for quick reference.
