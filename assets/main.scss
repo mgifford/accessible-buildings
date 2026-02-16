@@ -37,13 +37,13 @@ body {
   -webkit-backdrop-filter: blur(var(--header-blur));
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: var(--header-shadow);
-  min-height: 70px; // Slightly tighter
+  min-height: 100px;
 
   .wrapper {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    min-height: 70px !important;
+    min-height: 100px !important;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -61,8 +61,8 @@ body {
   float: none !important; // Override minima
 
   .site-logo {
-    height: 32px !important; // STRICT SIZING
-    max-height: 32px !important;
+    height: 64px !important; // DOUBLED SIZE
+    max-height: 64px !important;
     width: auto !important;
     margin-right: 12px !important;
     display: block !important;
