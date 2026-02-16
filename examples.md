@@ -38,4 +38,4 @@ Every example in this collection is assessed against eight criteria:
 
 ## Add Your Example
 
-Do you have a great building access guide? [Contribute it to our library!](./contribute.md)
+Do you have a great building access guide? [Contribute it to our library!]({{ "/contribute/" | relative_url }})
