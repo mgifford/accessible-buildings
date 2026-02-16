@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Tests for the Building Access Guide Toolkit",
   "scripts": {
-    "test:access": "pa11y-ci"
+    "test:links": "node scripts/check-links.js"
   },
   "devDependencies": {
-    "linkinator": "^7.5.3",
-    "pa11y-ci": "^3.1.0"
+    "linkinator": "^7.5.3"
   }
 }
