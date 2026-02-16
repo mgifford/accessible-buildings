@@ -19,11 +19,11 @@ The Building Access Guide Toolkit helps organizations provide the specific, oper
 1. **Pick a Template:** Use the [templates]({{ "/templates/" | relative_url }}) to build your access guide.
 2. **Review the Access Chain:** Ensure your content covers every link in the journey.
 3. **Internal Governance:** Use the [maintenance checklist]({{ "/templates/maintenance-checklist.md" | relative_url }}) to keep information accurate.
-4. **Placement:** Follow the [website placement guidance]({{ "/website-placement/" | relative_url }}) to make sure visitors can find your information.
+4. **Placement:** Follow the [website placement guidance]({{ "/publishing/website-placement/" | relative_url }}) to make sure visitors can find your information.
 
 ## Contributing
 
-We welcome contributions of new templates, examples, and improvements to the framework. See [CONTRIBUTING.md]({{ "/contribute/" | relative_url }}) for details.
+We welcome contributions of new templates, examples, and improvements to the framework. See [CONTRIBUTING.md]({{ "/community/contribute/" | relative_url }}) for details.
 
 ## License
 

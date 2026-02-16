@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contributing
-permalink: /contribute/
+permalink: /community/contribute/
 ---
 
 # Contributing to the Toolkit

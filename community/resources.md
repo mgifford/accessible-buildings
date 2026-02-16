@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resources
-permalink: /resources/
+permalink: /community/resources/
 ---
 
 # Accessibility Resources
@@ -39,4 +39,4 @@ Tactile maps are essential for visitors who are blind or have low vision. Modern
 
 We maintain structured extracts of key guidance documents to ensure their operational insights are preserved.
 
-- [View Canonical Resources]({{ "/resources/canonical/" | relative_url }})
+- [View Canonical Resources]({{ "/community/resources/canonical/" | relative_url }})

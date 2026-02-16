@@ -4,6 +4,15 @@ baseurl: "/accessible-buildings" # the subpath of your site, e.g. /blog
 url: "https://mgifford.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
 
+header_pages:
+  - index.md
+  - about/about.md
+  - framework/access-chain.md
+  - publishing/website-placement.md
+  - community/examples.md
+  - community/resources.md
+  - community/contribute.md
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

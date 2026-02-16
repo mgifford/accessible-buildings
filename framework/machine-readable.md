@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Machine-Readable Accessibility
-permalink: /machine-readable/
+permalink: /framework/machine-readable/
 ---
 
 # Making Accessibility Machine-Readable

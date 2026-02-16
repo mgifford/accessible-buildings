@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Website Placement
-permalink: /website-placement/
+permalink: /publishing/website-placement/
 ---
 
 # Where Should Your Access Info Live?

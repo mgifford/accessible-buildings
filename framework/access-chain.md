@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Access Chain
-permalink: /access-chain/
+permalink: /framework/access-chain/
 ---
 
 # The Access Chain Model

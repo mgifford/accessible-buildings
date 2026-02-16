@@ -1,3 +1,9 @@
+---
+layout: page
+title: Agents and Maintenance
+permalink: /about/agents/
+nav_exclude: true
+---
 # AGENTS.md
 
 ## Purpose

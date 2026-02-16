@@ -21,4 +21,4 @@ title: Visitor Summary Template
 2. [Crucial detail 2, e.g. "The nearest accessible station is 500m away with a flat route."]
 3. [Crucial detail 3, e.g. "We offer sensory-friendly hours every Tuesday morning."]
 
-[Read the Full Access Guide](../building-access-guide/)
+[Read the Full Access Guide]({{ "/templates/building-access-guide/" | relative_url }})

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Examples
-permalink: /examples/
+permalink: /community/examples/
 ---
 
 # Examples and Benchmarks
@@ -38,4 +38,4 @@ Every example in this collection is assessed against eight criteria:
 
 ## Add Your Example
 
-Do you have a great building access guide? [Contribute it to our library!]({{ "/contribute/" | relative_url }})
+Do you have a great building access guide? [Contribute it to our library!]({{ "/community/contribute/" | relative_url }})

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Governance and Maintenance
-permalink: /governance/
+permalink: /publishing/governance/
 ---
 
 # Governance: Keeping Information Accurate
