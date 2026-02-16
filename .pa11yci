@@ -1,0 +1,26 @@
+{
+  "defaults": {
+    "runners": [
+      "axe"
+    ],
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "useIncognitoBrowserContext": true
+  },
+  "urls": [
+    "http://localhost:4000/",
+    "http://localhost:4000/about/",
+    "http://localhost:4000/access-chain/",
+    "http://localhost:4000/website-placement/",
+    "http://localhost:4000/governance/",
+    "http://localhost:4000/resources/",
+    "http://localhost:4000/examples/",
+    "http://localhost:4000/machine-readable/",
+    "http://localhost:4000/templates/building-access-guide/",
+    "http://localhost:4000/templates/maintenance-checklist/",
+    "http://localhost:4000/templates/summary-template/",
+    "http://localhost:4000/templates/facilities-template/",
+    "http://localhost:4000/templates/sensory-profile/",
+    "http://localhost:4000/templates/arrival-template/"
+  ]
+}

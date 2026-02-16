@@ -1,0 +1,11 @@
+{
+  "name": "accessible-buildings-toolkit",
+  "version": "1.0.0",
+  "description": "Tests for the Building Access Guide Toolkit",
+  "scripts": {
+    "test:access": "pa11y-ci"
+  },
+  "devDependencies": {
+    "pa11y-ci": "^3.1.0"
+  }
+}
