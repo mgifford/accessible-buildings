@@ -18,4 +18,4 @@ Use these templates to build your building access guide. You can copy the raw ma
 - **[Facilities Detail]({{ "/templates/facilities-template/" | relative_url }}):** Specifics on toilets, Changing Places, and seating.
 
 ## Internal Tools
-- **[Maintenance Checklist]({{ "/templates/maintenance-checklist.md" | relative_url }}):** An operational tool to ensure accessibility features remain functional.
+- **[Maintenance Checklist]({{ "/templates/maintenance-checklist/" | relative_url }}):** An operational tool to ensure accessibility features remain functional.
