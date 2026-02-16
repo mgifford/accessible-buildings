@@ -65,5 +65,8 @@ jobs:
         uses: codespell-project/actions-codespell@v2
         with:
           check_filenames: true
-          ignore_words_list: accessible,accessibility # Don't ignore these, but just as example
-          path: .
+          skip: '*.json,*.yml,*.yaml,_site,node_modules,.git,Gemfile.lock,package-lock.json'
+          ignore_words_list: >
+            afe,aoda,ans,ba,chage,connexion,curation,nd,
+            pullout,ser,sur,te,thru,ue,washroom,washrooms,
+            wayfinding,signage,tactile,braille,wcag,ada
