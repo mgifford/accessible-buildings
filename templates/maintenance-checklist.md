@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Maintenance Checklist
+permalink: /templates/maintenance-checklist/
 ---
 
 # Internal Maintenance Checklist

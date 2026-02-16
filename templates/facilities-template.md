@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Facilities Template
+permalink: /templates/facilities-template/
 ---
 
 # Building Facilities at [Building Name]

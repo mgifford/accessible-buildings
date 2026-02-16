@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Sensory Profile Template
+permalink: /templates/sensory-profile/
 ---
 
 # [Building/Exhibition Name] Sensory Profile

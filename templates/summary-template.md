@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Visitor Summary Template
+permalink: /templates/summary-template/
 ---
 
 # [Building Name] - Access at a Glance

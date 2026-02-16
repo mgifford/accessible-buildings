@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Arrival Template
+permalink: /templates/arrival-template/
 ---
 
 # Arrival at [Building Name]

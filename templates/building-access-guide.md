@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Building Access Guide Template
+permalink: /templates/building-access-guide/
 ---
 
 # [Building Name] Access Guide
