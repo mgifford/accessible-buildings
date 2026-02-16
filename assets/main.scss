@@ -1,7 +1,4 @@
----
----
-
-// Modern Typography & Text Scaling Support
+--- --- // Modern Typography & Text Scaling Support
 // Based on https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
@@ -188,15 +185,18 @@ body {
       }
     }
 
-    // Hover effect for dropdown
+    // Hover AND FOCUS effects for dropdown (keyboard accessible!)
     @media screen and (min-width: 821px) {
-      &:hover .nav-items {
+
+      &:hover .nav-items,
+      &:focus-within .nav-items {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
       }
 
-      &:hover .group-title {
+      &:hover .group-title,
+      &:focus-within .group-title {
         color: var(--brand-color);
       }
     }
