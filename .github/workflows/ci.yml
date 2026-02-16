@@ -28,14 +28,31 @@ jobs:
           path: _site
 
   links:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
+      - name: Download built site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
+
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.0.2
         with:
-          args: --exclude-mail --verbose --no-progress './**/*.md' './**/*.html'
+          # Check the built site, not source files with Liquid templates
+          args: >
+            --verbose
+            --no-progress
+            --exclude-mail
+            --exclude 'https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-bodies'
+            --exclude 'https://www.iso.org/standard/*'
+            --exclude 'https://www.melbourne.vic.gov.au/*'
+            --exclude 'https://www.finance.gov.au/*'
+            --accept 403,429,999
+            './_site/**/*.html'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

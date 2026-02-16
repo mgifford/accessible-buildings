@@ -20,7 +20,7 @@ This toolkit is built on existing best practices and international frameworks. H
 ## Government Guidance
 
 - **[ADA.gov (USA)](https://www.ada.gov):** Official guidance on the Americans with Disabilities Act. Use their museum and small business guides for conceptual models.
-- **[GOV.UK Accessibility (UK)](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-bodies):** Standards for public sector accessibility.
+- **[GOV.UK Accessibility (UK)](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps):** Standards for public sector accessibility.
 - **[City of Melbourne Accessibility (AU)](https://www.melbourne.vic.gov.au/community/health-support-services/disability-services/Pages/disability-services.aspx):** Resources for accessibility in the city.
 
 ## Technical Standards
