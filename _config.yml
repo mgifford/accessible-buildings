@@ -1,7 +1,7 @@
 title: Building Access Guide Toolkit
 description: A practical toolkit for publishing structured, transparent information about the physical accessibility of buildings.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/accessible-buildings" # the subpath of your site, e.g. /blog
+url: "https://mgifford.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
 
 plugins:
