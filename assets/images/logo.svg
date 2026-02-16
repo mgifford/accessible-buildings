@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Rounded Rect Background matching the PNG aesthetic -->
+  <rect width="100" height="100" rx="15" fill="#005ea5"/>
+  
+  <!-- Building Silhouette (Two-tone for depth) -->
+  <path d="M15 85V45l15-10v50z" fill="#fff" opacity="0.6"/>
+  <path d="M30 85V30l35-15v70z" fill="#fff"/>
+  
+  <!-- Windows -->
+  <rect x="35" y="25" width="6" height="10" rx="1" fill="#005ea5"/>
+  <rect x="48" y="25" width="6" height="10" rx="1" fill="#005ea5"/>
+  <rect x="35" y="42" width="6" height="10" rx="1" fill="#005ea5"/>
+  <rect x="48" y="42" width="6" height="10" rx="1" fill="#005ea5"/>
+  <rect x="35" y="59" width="6" height="10" rx="1" fill="#005ea5"/>
+  <rect x="48" y="59" width="6" height="10" rx="1" fill="#005ea5"/>
+  
+  <!-- Improved International Symbol of Access (ISA) -->
+  <g fill="#fff" transform="translate(68, 65) scale(0.35)">
+    <circle cx="0" cy="-60" r="12" />
+    <path d="M15-35h-35c-8 0-15 7-15 15v5c0 8 7 15 15 15h5v20c0 10 8 18 18 18h15c2 0 4-2 4-4s-2-4-4-4h-15c-6 0-10-4-10-10v-20h35c8 0 15-7 15-15v-5c0-8-7-15-15-15z" />
+    <path d="M35 15a45 45 0 1 1-90 0 45 45 0 0 1 90 0zm-10 0a35 35 0 1 0-70 0 35 35 0 0 0 70 0z" />
+  </g>
+</svg>

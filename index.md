@@ -32,6 +32,6 @@ How to own, update, and maintain your accessibility information for long-term ac
 ---
 
 ## Why "Access Chain"?
-Access isn't a ramp. It's a sequence. If any link in the chain fails—a broken lift, a blocked hallway, or a hidden entrance—the whole visit fails. This toolkit helps you audit and document every link.
+Access isn't a ramp. It's a sequence. If any link in the chain fails—a broken lift, a blocked hallway, or a hidden entrance—the whole visit fails. This toolkit helps you audit and document every link using the **Access Chain** model by the [Sensory Trust](https://www.sensorytrust.org.uk/resources/guidance/access-chain-an-inclusive-design-tool).
 
 [Get Started with Templates]({{ "/templates/" | relative_url }})

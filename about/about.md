@@ -13,7 +13,7 @@ The Building Access Guide exists to help organizations communicate high-quality,
 > [!IMPORTANT]
 > This is a **communication framework**. It helps you describe what already exists. It is **not** a guide on how to build or renovate an accessible building.
 >
-> For instructions on physical construction, accessibility standards, or building codes, you should refer to your local regulations (such as the ADA in the US, Part M in the UK, or the AODA in Ontario) and accessibility consultants.
+> For instructions on physical construction, accessibility standards, or building codes, you should refer to your local regulations (such as the [ADA in the US](https://www.ada.gov), [British Standards/Part M in the UK](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-bodies), or the [AODA in Ontario](https://www.ontario.ca/page/accessibility-laws)) and accessibility consultants.
 
 ## Our Approach
 This framework is built on the concept of the **Access Chain**. Access is not a single feature (like a ramp); it is a sequence of events. If any link in the chain fails—from planning the trip to entering the building and using the facilities—the whole visit may fail.
@@ -29,7 +29,7 @@ This toolkit is intentionally neutral and community-driven. It pulls together es
 
 Key influences include:
 - **Museum Accessibility Guidance:** Models for describing operational constraints in complex public buildings.
-- **The Access Chain:** A sequential framework for understanding user journeys.
+- **The Access Chain:** A sequential framework for understanding user journeys (defined by the [Sensory Trust](https://www.sensorytrust.org.uk/resources/guidance/access-chain-an-inclusive-design-tool)).
 - **Web Standards:** Applying WCAG-style rigor to physical documentation.
 
 While we strive for international applicability, we encourage users to adapt these templates to their local regulatory context and specific building types.

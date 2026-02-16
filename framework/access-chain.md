@@ -6,7 +6,7 @@ permalink: /framework/access-chain/
 
 # The Access Chain Model
 
-Accessibility is not a binary state ("accessible" vs. "inaccessible"). It is a sequence of events. We call this the **Access Chain**.
+Accessibility is not a binary state ("accessible" vs. "inaccessible"). It is a sequence of events. We call this the **Access Chain**, a model originally developed by the [Sensory Trust](https://www.sensorytrust.org.uk/resources/guidance/access-chain-an-inclusive-design-tool).
 
 If any single link in this chain breaks, the visitor may be unable to complete their visit.
 

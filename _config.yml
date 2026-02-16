@@ -8,7 +8,6 @@ github_username: mgifford
 github_repo: accessible-buildings
 
 header_pages:
-  - index.md
   - about/about.md
   - framework/access-chain.md
   - framework/building-layout.md
