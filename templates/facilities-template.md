@@ -11,6 +11,9 @@ Detailed accessibility information for the essential services within our buildin
 
 *The detail provided here helps users understand if the facility meets their specific physical needs. Vague descriptions like "accessible" are insufficient.*
 
+- **Facility Map:** [Link to a simplified diagram of this specific area/floor]
+- **Accessible Path to This Facility:** [e.g., Follow the blue tactile line from Main Entrance]
+- **Known Barriers:** [Briefly list major barriers, e.g., "Level 3 is only accessible via stairs"]
 - **Locations:** [e.g., Ground Floor near Cafe, Level 2 near elevators]
 - **Door Type:** [Manual/Automatic/Sliding] - *Does it require a heavy pull or a button press?*
 - **Dimensions:** [Width x Depth] - *Specifically the space for a wheelchair to turn.*

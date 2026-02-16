@@ -56,6 +56,8 @@ title: Building Access Guide Template
 - **Clear Route Width:** [Minimum width of paths, e.g., 900mm]
 - **Signage:** [High contrast? Braille? Large print?]
 - **Tactile Maps:** [Available at reception? 3D printed models available for orientation?]
+- **Building Map:** [Link to a simplified, accessible floor plan or interactive map]
+- **Level-by-Level Description:** [Briefly describe the layout of each floor, highlighting accessible routes]
 - **Temporary Barriers:** [How we manage event barriers or queue lines]
 
 ---
