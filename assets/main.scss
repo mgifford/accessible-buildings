@@ -1,4 +1,6 @@
---- --- @import "minima";
+---
+---
+@import "minima";
 
 // Modern Typography & Text Scaling Support
 // Based on https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/
@@ -142,7 +144,7 @@ body {
           opacity: 0.5;
         }
       }
-
+      
       &:focus {
         outline: 2px solid var(--brand-color);
         outline-offset: 4px;
@@ -187,8 +189,7 @@ body {
         font-size: 0.9rem !important;
         text-decoration: none !important;
 
-        &:hover,
-        &:focus {
+        &:hover, &:focus {
           background: var(--nav-link-bg-hover);
           color: var(--nav-link-hover) !important;
         }
@@ -197,7 +198,6 @@ body {
 
     // Hover AND FOCUS effects for dropdown (keyboard accessible!)
     @media screen and (min-width: 821px) {
-
       &:hover .nav-items,
       &:focus-within .nav-items {
         opacity: 1;
