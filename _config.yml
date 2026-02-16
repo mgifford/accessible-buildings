@@ -13,6 +13,19 @@ header_pages:
   - community/resources.md
   - community/contribute.md
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - vendor/
+  - .bundle/
+  - .jekyll-cache/
+  - .jekyll-metadata
+  - .pa11yci
+  - AGENTS.md
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
