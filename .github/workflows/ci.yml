@@ -51,6 +51,8 @@ jobs:
             --exclude 'https://www.iso.org/standard/*'
             --exclude 'https://www.melbourne.vic.gov.au/*'
             --exclude 'https://www.finance.gov.au/*'
+            --exclude 'https://www.youtube.com/*'
+            --exclude 'https://www.instructables.com/*'
             --accept 403,429,999
             './_site/**/*.html'
         env:
