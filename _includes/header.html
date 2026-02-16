@@ -20,7 +20,7 @@
                 <ul class="nav-groups">
                     {%- for group in site.data.navigation -%}
                     <li class="nav-group">
-                        <span class="group-title">{{ group.title }}</span>
+                        <span class="group-title" tabindex="0">{{ group.title }}</span>
                         <ul class="nav-items">
                             {%- for item in group.items -%}
                             <li><a class="page-link" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
