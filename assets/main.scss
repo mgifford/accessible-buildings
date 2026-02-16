@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --brand-color: #005ea5;
+  --brand-color: #1858a8; // WCAG AA Compliance (4.5:1+)
   --bg-color: #ffffff;
   --text-color: #111111;
   --header-bg: rgba(255, 255, 255, 0.98);
@@ -15,10 +15,10 @@
   --header-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --nav-link-color: #333;
-  --nav-link-hover: #005ea5;
-  --nav-link-bg-hover: rgba(0, 94, 165, 0.05);
+  --nav-link-hover: #1858a8;
+  --nav-link-bg-hover: rgba(24, 88, 168, 0.05);
   --footer-bg: #f9f9f9;
-  --footer-text: #595959; // WCAG AA Compliance (4.5:1+)
+  --footer-text: #454545; // Darkened for better readability and contrast
   --footer-link: #1858a8; // WCAG AA Compliance (4.5:1+)
   --border-color: rgba(0, 0, 0, 0.06);
 }
@@ -51,6 +51,14 @@ body {
   color: var(--text-color) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// Global Link Contrast Fix
+a {
+  color: var(--brand-color);
+  &:hover {
+    color: var(--brand-color);
+  }
 }
 
 // ---------------------------------------------------------
@@ -90,7 +98,7 @@ body {
   float: none !important; // Override minima
 
   .site-logo {
-    height: 48px !important; // CONSTRAINED SIZE
+    height: 48px !important;
     max-height: 48px !important;
     width: auto !important;
     margin-right: 12px !important;
@@ -252,12 +260,25 @@ body {
   background-color: var(--footer-bg) !important;
   color: var(--footer-text) !important;
 
-  .footer-heading {
+  // Darken footer text and ensure contrast
+  p, div {
     color: var(--footer-text) !important;
   }
 
+  .footer-heading {
+    color: var(--footer-text) !important;
+    font-weight: 700;
+  }
+
+  // Link Distinction (Underline)
   a {
     color: var(--footer-link) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+    
+    &:hover, &:focus {
+      text-decoration-thickness: 2px !important;
+    }
   }
 }
 
@@ -277,5 +298,14 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     max-width: 800px;
+  }
+  
+  // Underline links in content blocks for clarity
+  a {
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+    &:hover, &:focus {
+      text-decoration-thickness: 2px !important;
+    }
   }
 }
