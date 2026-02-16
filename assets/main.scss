@@ -1,6 +1,4 @@
----
----
-@import "minima";
+--- --- @import "minima";
 
 // Modern Typography & Text Scaling Support
 // Based on https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/
@@ -8,6 +6,8 @@
 
 :root {
   --brand-color: #005ea5;
+  --bg-color: #ffffff;
+  --text-color: #111111;
   --header-bg: rgba(255, 255, 255, 0.98);
   --header-blur: 15px;
   --header-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
@@ -15,6 +15,27 @@
   --nav-link-color: #333;
   --nav-link-hover: #005ea5;
   --nav-link-bg-hover: rgba(0, 94, 165, 0.05);
+  --footer-bg: #f9f9f9;
+  --footer-text: #595959; // WCAG AA Compliance (4.5:1+)
+  --footer-link: #1858a8; // WCAG AA Compliance (4.5:1+)
+  --border-color: rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-color: #4da3ff;
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --header-bg: rgba(26, 26, 26, 0.98);
+    --header-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    --nav-link-color: #ccc;
+    --nav-link-hover: #4da3ff;
+    --nav-link-bg-hover: rgba(77, 163, 255, 0.1);
+    --footer-bg: #222222;
+    --footer-text: #b0b0b0;
+    --footer-link: #80bdff;
+    --border-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 * {
@@ -24,6 +45,8 @@
 
 body {
   font-family: var(--font-family) !important;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,7 +62,7 @@ body {
   background: var(--header-bg);
   backdrop-filter: blur(var(--header-blur));
   -webkit-backdrop-filter: blur(var(--header-blur));
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--border-color);
   box-shadow: var(--header-shadow);
   min-height: 80px;
 
@@ -65,11 +88,12 @@ body {
   float: none !important; // Override minima
 
   .site-logo {
-    height: 48px !important; // REFINED SIZE
+    height: 48px !important;
     max-height: 48px !important;
     width: auto !important;
     margin-right: 12px !important;
     display: block !important;
+    border-radius: 4px;
   }
 }
 
@@ -88,6 +112,10 @@ body {
     @media screen and (max-width: 820px) {
       display: block !important;
       cursor: pointer;
+
+      svg {
+        fill: var(--text-color);
+      }
     }
   }
 
@@ -103,7 +131,7 @@ body {
       position: absolute;
       top: 100%;
       right: 0;
-      background: #fff;
+      background: var(--bg-color);
       width: 100%;
       flex-direction: column;
       padding: 1rem !important;
@@ -125,13 +153,13 @@ body {
 
     @media screen and (max-width: 820px) {
       padding: 0.5rem 0;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid var(--border-color);
     }
 
     .group-title {
       font-weight: 700;
       font-size: 0.85rem;
-      color: #333;
+      color: var(--nav-link-color);
       padding-bottom: 5px;
       cursor: default;
       display: inline-block;
@@ -144,7 +172,7 @@ body {
           opacity: 0.5;
         }
       }
-      
+
       &:focus {
         outline: 2px solid var(--brand-color);
         outline-offset: 4px;
@@ -162,10 +190,10 @@ body {
         position: absolute;
         top: 100%;
         left: -15px;
-        background: #fff;
+        background: var(--bg-color);
         min-width: 220px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.05);
+        border: 1px solid var(--border-color);
         border-radius: 8px;
         padding: 8px !important;
         opacity: 0;
@@ -181,7 +209,7 @@ body {
       }
 
       .page-link {
-        color: #444 !important;
+        color: var(--text-color) !important;
         padding: 8px 12px !important;
         display: block !important;
         border-radius: 4px;
@@ -189,7 +217,8 @@ body {
         font-size: 0.9rem !important;
         text-decoration: none !important;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           background: var(--nav-link-bg-hover);
           color: var(--nav-link-hover) !important;
         }
@@ -198,6 +227,7 @@ body {
 
     // Hover AND FOCUS effects for dropdown (keyboard accessible!)
     @media screen and (min-width: 821px) {
+
       &:hover .nav-items,
       &:focus-within .nav-items {
         opacity: 1;
@@ -218,9 +248,18 @@ body {
 // ---------------------------------------------------------
 
 .site-footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color);
   padding: 60px 0;
-  background-color: #f9f9f9 !important;
+  background-color: var(--footer-bg) !important;
+  color: var(--footer-text) !important;
+
+  .footer-heading {
+    color: var(--footer-text) !important;
+  }
+
+  a {
+    color: var(--footer-link) !important;
+  }
 }
 
 .home {
@@ -236,7 +275,7 @@ body {
 
   p {
     font-size: 1.25rem;
-    color: #444;
+    color: var(--text-color);
     line-height: 1.6;
     max-width: 800px;
   }
