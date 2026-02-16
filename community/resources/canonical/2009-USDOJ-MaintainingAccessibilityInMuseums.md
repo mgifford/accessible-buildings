@@ -1,5 +1,7 @@
 ---
+layout: page
 Title: Maintaining Accessibility in Museums
+permalink: /community/resources/canonical/2009-USDOJ-MaintainingAccessibilityInMuseums/
 Organization: U.S. Department of Justice, Civil Rights Division, Disability Rights Section
 Original Publication Date: April 2009
 Original URL: https://www.ada.gov/

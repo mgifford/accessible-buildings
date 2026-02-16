@@ -1,5 +1,7 @@
 ---
+layout: page
 Title: How to Create a Building Accessibility Guide
+permalink: /community/resources/canonical/AustralianGov-BuildingAccessibilityGuide/
 Organization: Australian Government, Department of Finance
 Original Publication Date: Date not specified (web guidance, accessed 2026-02-15)
 Original URL: https://www.finance.gov.au/government/property-and-construction/creating-accessible-and-inclusive-spaces/how-create-building-accessibility-guide

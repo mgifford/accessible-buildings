@@ -1,5 +1,7 @@
 ---
+layout: page
 Title: The Access Chain – A Tool for Inclusive Design
+permalink: /community/resources/canonical/SensoryTrust-AccessChain/
 Organization: Sensory Trust (UK)
 Original Publication Date: Date not specified (ongoing web publication)
 Original URL: https://www.sensorytrust.org.uk/resources/guidance/access-chain-an-inclusive-design-tool
