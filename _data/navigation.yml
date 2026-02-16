@@ -1,0 +1,31 @@
+- title: The Framework
+  items:
+    - title: The Access Chain
+      url: /framework/access-chain/
+    - title: Building Layout
+      url: /framework/building-layout/
+    - title: Emergency Support
+      url: /framework/emergency-support/
+
+- title: Publishing
+  items:
+    - title: Website Placement
+      url: /publishing/website-placement/
+    - title: Governance
+      url: /publishing/governance/
+
+- title: Community
+  items:
+    - title: Examples
+      url: /community/examples/
+    - title: Resources
+      url: /community/resources/
+    - title: Contribute
+      url: /community/contribute/
+
+- title: About
+  items:
+    - title: About the Guide
+      url: /about/
+    - title: Accessibility Statement
+      url: /about/accessibility-statement/

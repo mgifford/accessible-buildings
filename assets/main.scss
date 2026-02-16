@@ -1,16 +1,17 @@
----
----
-@import "minima";
+--- --- @import "minima";
 
 // Modern Typography
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
   --brand-color: #005ea5;
-  --header-bg: rgba(255, 255, 255, 0.85);
-  --header-blur: 12px;
-  --header-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --header-blur: 15px;
+  --header-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --nav-link-color: #333;
+  --nav-link-hover: #005ea5;
+  --nav-link-bg-hover: rgba(0, 94, 165, 0.05);
 }
 
 body {
@@ -18,7 +19,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// Sticky Header & Glassmorphism
+// ---------------------------------------------------------
+// REFACTORED NAVIGATION (MOBILE-FIRST)
+// ---------------------------------------------------------
+
 .site-header {
   position: sticky;
   top: 0;
@@ -26,90 +30,228 @@ body {
   background: var(--header-bg);
   backdrop-filter: blur(var(--header-blur));
   -webkit-backdrop-filter: blur(var(--header-blur));
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: var(--header-shadow);
-  transition: all 0.3s ease;
-  min-height: 70px;
+  min-height: 80px;
   display: flex;
   align-items: center;
 }
 
 .site-title {
-  display: flex;
+  display: flex !important;
   align-items: center;
-  font-weight: 700 !important;
-  font-size: 1.25rem !important;
-  letter-spacing: -0.02em;
+  font-weight: 800 !important;
+  font-size: 1.35rem !important;
+  letter-spacing: -0.03em !important;
   color: var(--brand-color) !important;
-  
+  text-decoration: none !important;
+
   .site-logo {
-    height: 48px;
+    height: 52px;
     width: auto;
-    margin-right: 12px;
-    transition: transform 0.3s ease;
+    margin-right: 14px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  
+
   &:hover .site-logo {
-    transform: scale(1.05);
+    transform: scale(1.1) rotate(-3deg);
   }
 }
 
 .site-nav {
-  .page-link {
-    font-weight: 600 !important;
-    font-size: 0.95rem;
-    color: #333 !important;
-    margin-left: 24px !important;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    
-    &:hover {
-      background: rgba(0, 94, 165, 0.08);
-      color: var(--brand-color) !important;
-      text-decoration: none !important;
+
+  // Mobile Nav Toggle Reset
+  .menu-icon {
+    display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+
+  .nav-groups {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+
+    @media screen and (max-width: 800px) {
+      display: none; // Hidden by default on mobile unless triggered
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #fff;
+      width: 100%;
+      flex-direction: column;
+      padding: 1rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      gap: 0;
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+  }
+
+  .nav-trigger:checked~.trigger .nav-groups {
+    @media screen and (max-width: 800px) {
+      display: flex;
+    }
+  }
+
+  // Individual Group
+  .nav-group {
+    position: relative;
+    padding: 1.5rem 0;
+
+    @media screen and (max-width: 800px) {
+      padding: 1rem 0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .group-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: default;
+      display: inline-block;
+      margin-bottom: 8px;
+
+      @media screen and (min-width: 801px) {
+        color: #333;
+        font-size: 1rem;
+        margin-bottom: 0;
+        text-transform: none;
+        letter-spacing: 0;
+        padding-bottom: 5px;
+
+        &::after {
+          content: '▾';
+          margin-left: 5px;
+          font-size: 0.8rem;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    // Nested Items
+    .nav-items {
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0 1rem;
+
+      @media screen and (min-width: 801px) {
+        position: absolute;
+        top: 100%;
+        left: -10px;
+        background: #fff;
+        min-width: 220px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        padding: 12px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+
+        li {
+          margin-bottom: 4px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .page-link {
+        font-weight: 600 !important;
+        font-size: 0.95rem;
+        color: #444 !important;
+        padding: 10px 14px !important;
+        display: block !important;
+        border-radius: 8px;
+        transition: all 0.25s ease;
+        margin: 0 !important;
+
+        &:hover {
+          background: var(--nav-link-bg-hover);
+          color: var(--nav-link-hover) !important;
+          transform: translateX(3px);
+          text-decoration: none !important;
+        }
+      }
+    }
+
+    // Desktop Hover Effect
+    @media screen and (min-width: 801px) {
+      &:hover .nav-items {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      &:hover .group-title {
+        color: var(--brand-color);
+      }
     }
   }
 }
 
-// Custom Footer Contrast Fix
+// ---------------------------------------------------------
+// FOOTER & OTHER UI REFINEMENTS
+// ---------------------------------------------------------
+
 .site-footer {
   border-top: 1px solid #eee;
-  padding: 60px 0;
-  background-color: #f9f9f9 !important;
+  padding: 80px 0;
+  background-color: #fcfcfc !important;
   color: #444 !important;
 }
 
 .footer-heading {
   color: #111 !important;
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .site-footer a {
   color: var(--brand-color) !important;
   text-decoration: none;
-  border-bottom: 2px solid rgba(0, 94, 165, 0.2);
+  font-weight: 600;
+  border-bottom: 2px solid rgba(0, 94, 165, 0.1);
   padding-bottom: 1px;
-  transition: all 0.2s ease;
-  
+  transition: all 0.25s ease;
+
   &:hover {
     border-bottom: 2px solid var(--brand-color);
+    background: rgba(0, 94, 165, 0.03);
   }
 }
 
-// Hero Section Refinement
 .home {
+  padding: 60px 0;
+
   .page-heading {
-    font-size: 2.5rem;
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    margin-bottom: 0.5rem;
+    font-size: 3.25rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #005ea5 0%, #004478 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  
+
   p {
-    font-size: 1.15rem;
-    color: #555;
-    line-height: 1.6;
+    font-size: 1.3rem;
+    color: #444;
+    line-height: 1.7;
+    max-width: 800px;
   }
 }
