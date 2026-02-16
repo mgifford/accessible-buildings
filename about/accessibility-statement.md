@@ -17,6 +17,10 @@ To ensure we meet these standards, we use a combination of automated and manual 
 - **Manual Testing:** We perform periodic manual reviews, including keyboard-only navigation and screen reader testing.
 - **Link Integrity:** We use automated link checkers to ensure all content is reachable.
 
+## Building Access Guide
+
+This toolkit is designed to help you create a Building Access Guide. If you are a visitor looking for physical accessibility information for our buildings, please review our **[Building Access Guide Guidance](/accessible-buildings/framework/building-layout/)**.
+
 ## Known Constraints
 While we strive for perfection, we are a community-driven project. Some aspects of the site (like third-party theme components) may occasionally fall short. We prioritize fixing these issues whenever they are identified.
 

@@ -12,10 +12,11 @@ The best building access guide is useless if visitors cannot find it. Accessibil
 
 Don't bury your accessibility page in a sub-menu. It must be visible from these key locations:
 
-1. **The Global Footer:** A clear "Accessibility" or "Access Guide" link in the footer of every page.
-2. **Contact Page:** Provide access info alongside your address and phone number.
-3. **Visit / Plan Your Visit Pages:** This is where visitors look for logistical info.
-4. **Event Pages:** Every event listing should link back to the building's access details.
+1. **The Global Footer:** A clear "Accessibility Statement" link in the footer of every page. This serves as the primary entry point for all policy and operational access info.
+2. **Accessibility Statement:** The statement should link directly to your **Building Access Guide** (or specific venue information) if you manage physical buildings.
+3. **Contact Page:** Provide access info alongside your address and phone number.
+4. **Visit / Plan Your Visit Pages:** This is where visitors look for logistical info.
+5. **Event Pages:** Every event listing should link back to the building's access details.
 
 ## Recommended URL Patterns
 
