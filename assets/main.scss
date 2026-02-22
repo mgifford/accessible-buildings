@@ -24,6 +24,7 @@
   --code-bg: #f5f5ff; // Light background for code blocks
   --code-border: #e8e8e8; // Light border for code blocks
   --table-bg-even: #f9f9f9; // Light background for even table rows
+  --table-header-bg: #f5f5ff; // Light background for table headers
   --table-border: #e8e8e8; // Light border for tables
 }
 
@@ -44,6 +45,7 @@
     --code-bg: #2a2a2a; // Dark background for code blocks
     --code-border: #444; // Dark border for code blocks
     --table-bg-even: #252525; // Dark background for even table rows
+    --table-header-bg: #2a2a2a; // Dark background for table headers
     --table-border: #444; // Dark border for tables
   }
 }
@@ -323,28 +325,29 @@ a {
 // ---------------------------------------------------------
 // Override minima theme's pre/code styles to support dark mode
 
-pre,
+// Inline code elements
 code {
   background-color: var(--code-bg) !important;
   border: 1px solid var(--code-border) !important;
   color: var(--text-color) !important;
-}
-
-// Ensure inline code is readable
-code {
   padding: 2px 6px;
   border-radius: 3px;
 }
 
-// Ensure pre blocks are readable
+// Pre code blocks
 pre {
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--code-border) !important;
+  color: var(--text-color) !important;
   padding: 8px 12px;
   border-radius: 4px;
   overflow-x: auto;
   
+  // Code inside pre should not have additional styling
   code {
     background-color: transparent !important;
     border: none !important;
+    padding: 0;
   }
 }
 
@@ -365,7 +368,7 @@ table {
     }
     
     th {
-      background-color: var(--code-bg) !important;
+      background-color: var(--table-header-bg) !important;
       color: var(--text-color) !important;
       padding: 8px 12px;
       text-align: left;
