@@ -330,8 +330,8 @@ code {
   background-color: var(--code-bg) !important;
   border: 1px solid var(--code-border) !important;
   color: var(--text-color) !important;
-  padding: 2px 6px;
-  border-radius: 3px;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
 }
 
 // Pre code blocks
@@ -339,15 +339,15 @@ pre {
   background-color: var(--code-bg) !important;
   border: 1px solid var(--code-border) !important;
   color: var(--text-color) !important;
-  padding: 8px 12px;
-  border-radius: 4px;
-  overflow-x: auto;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+  overflow-x: auto !important;
   
   // Code inside pre should not have additional styling
   code {
     background-color: transparent !important;
     border: none !important;
-    padding: 0;
+    padding: 0 !important;
   }
 }
 
@@ -370,9 +370,9 @@ table {
     th {
       background-color: var(--table-header-bg) !important;
       color: var(--text-color) !important;
-      padding: 8px 12px;
-      text-align: left;
-      font-weight: 600;
+      padding: 8px 12px !important;
+      text-align: left !important;
+      font-weight: 600 !important;
     }
   }
   
@@ -386,7 +386,7 @@ table {
     }
     
     td {
-      padding: 8px 12px;
+      padding: 8px 12px !important;
       color: var(--text-color) !important;
     }
   }
