@@ -21,6 +21,10 @@
   --footer-text: #454545; // Darkened for better readability and contrast
   --footer-link: #1858a8; // WCAG AA Compliance (4.5:1+)
   --border-color: rgba(0, 0, 0, 0.06);
+  --code-bg: #f5f5ff; // Light background for code blocks
+  --code-border: #e8e8e8; // Light border for code blocks
+  --table-bg-even: #f9f9f9; // Light background for even table rows
+  --table-border: #e8e8e8; // Light border for tables
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +41,10 @@
     --footer-text: #b0b0b0;
     --footer-link: #80bdff;
     --border-color: rgba(255, 255, 255, 0.1);
+    --code-bg: #2a2a2a; // Dark background for code blocks
+    --code-border: #444; // Dark border for code blocks
+    --table-bg-even: #252525; // Dark background for even table rows
+    --table-border: #444; // Dark border for tables
   }
 }
 
@@ -306,6 +314,77 @@ a {
     text-underline-offset: 3px;
     &:hover, &:focus {
       text-decoration-thickness: 2px !important;
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// CODE BLOCK DARK MODE FIX
+// ---------------------------------------------------------
+// Override minima theme's pre/code styles to support dark mode
+
+pre,
+code {
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--code-border) !important;
+  color: var(--text-color) !important;
+}
+
+// Ensure inline code is readable
+code {
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+// Ensure pre blocks are readable
+pre {
+  padding: 8px 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  
+  code {
+    background-color: transparent !important;
+    border: none !important;
+  }
+}
+
+// ---------------------------------------------------------
+// TABLE DARK MODE FIX
+// ---------------------------------------------------------
+// Override minima theme's table styles to support dark mode
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--text-color) !important;
+  
+  thead {
+    tr {
+      border-bottom: 2px solid var(--table-border) !important;
+    }
+    
+    th {
+      background-color: var(--code-bg) !important;
+      color: var(--text-color) !important;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+  }
+  
+  tbody {
+    tr {
+      border-bottom: 1px solid var(--table-border) !important;
+      
+      &:nth-child(even) {
+        background-color: var(--table-bg-even) !important;
+      }
+    }
+    
+    td {
+      padding: 8px 12px;
+      color: var(--text-color) !important;
     }
   }
 }
