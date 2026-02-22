@@ -13,5 +13,6 @@ We maintain structured extracts of key accessibility guidance and international 
 - **[Access Chain: An Inclusive Design Tool]({{ "/community/resources/canonical/SensoryTrust-AccessChain/" | relative_url }}):** A framework for modeling access across the full visitor journey.
 - **[Maintaining Accessibility in Museums (2009)]({{ "/community/resources/canonical/2009-USDOJ-MaintainingAccessibilityInMuseums/" | relative_url }}):** US Department of Justice guidance on operational accessibility.
 - **[Australian Government Building Accessibility Guide]({{ "/community/resources/canonical/AustralianGov-BuildingAccessibilityGuide/" | relative_url }}):** Standards for public sector accessibility guides.
+- **[OpenStreetMap Accessibility Tagging]({{ "/community/resources/canonical/OpenStreetMap-AccessibilityTagging/" | relative_url }}):** Community-maintained standards for machine-readable accessibility metadata.
 
 [Back to Resources]({{ "/community/resources/" | relative_url }})
