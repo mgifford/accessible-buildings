@@ -27,6 +27,7 @@ This toolkit is built on existing best practices and international frameworks. H
 
 - **[WCAG 2.2 (W3C)](https://www.w3.org/TR/WCAG22/):** The global standard for web accessibility. This toolkit follows WCAG 2.2 AA.
 - **[ISO 21542:2021](https://www.iso.org/standard/71518.html):** Building construction — Accessibility and usability of the built environment.
+- **[OpenStreetMap Accessibility](https://wiki.openstreetmap.org/wiki/Key:wheelchair):** Community-maintained accessibility tagging standards for machine-readable metadata. See our [OSM tagging reference]({{ "/community/resources/canonical/OpenStreetMap-AccessibilityTagging/" | relative_url }}).
 
 ## Featured: Tactile Mapping
 

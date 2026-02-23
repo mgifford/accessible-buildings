@@ -33,3 +33,9 @@
   url: "https://www.instructables.com/Tactile-Map-for-People-With-Blindness-or-Partial-B/"
   type: "DIY Guide"
   notes: "Detailed instructions for creating 3D printed tactile maps. Note: Many public libraries now have 3D printers available for use."
+
+- title: "OpenStreetMap Accessibility Tagging"
+  org: "OpenStreetMap Foundation"
+  url: "https://wiki.openstreetmap.org/wiki/Key:wheelchair"
+  type: "Technical standard"
+  notes: "Community-maintained accessibility tagging standards for wheelchair access, doors, facilities, and navigation aids. Use for structured, machine-readable metadata."
