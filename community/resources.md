@@ -41,3 +41,9 @@ Tactile maps are essential for visitors who are blind or have low vision. Modern
 We maintain structured extracts of key guidance documents to ensure their operational insights are preserved.
 
 - [View Canonical Resources]({{ "/community/resources/canonical/" | relative_url }})
+
+## Best Practices Case Studies
+
+Learn from real-world examples of comprehensive accessibility documentation:
+
+- **[Sesame Place Philadelphia Best Practices]({{ "/community/resources/sesame-place-best-practices/" | relative_url }}):** Analysis of attraction-level accessibility documentation and sensory guide frameworks from a theme park environment, with lessons applicable to museums, theaters, and other multi-experience venues.
