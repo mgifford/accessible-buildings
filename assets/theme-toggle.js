@@ -1,6 +1,9 @@
 (function() {
   'use strict';
 
+  // Media query for dark mode preference
+  const darkModeMediaQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
   // Get stored theme preference or default to system preference
   function getStoredTheme() {
     return localStorage.getItem('theme');
@@ -19,7 +22,7 @@
     }
     
     // Check system preference
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (darkModeMediaQuery && darkModeMediaQuery.matches) {
       return 'dark';
     }
     
@@ -77,8 +80,8 @@
   }
 
   // Listen for system theme changes when no preference is stored
-  if (window.matchMedia) {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+  if (darkModeMediaQuery) {
+    darkModeMediaQuery.addEventListener('change', function(e) {
       if (!getStoredTheme()) {
         applyTheme(e.matches ? 'dark' : 'light');
       }
