@@ -57,21 +57,23 @@
     applyTheme(theme);
   }
 
-  // Set up event listeners when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      initTheme();
-      const button = document.getElementById('theme-toggle');
-      if (button) {
-        button.addEventListener('click', toggleTheme);
-      }
-    });
-  } else {
-    initTheme();
+  // Set up button event listener
+  function setupButton() {
     const button = document.getElementById('theme-toggle');
     if (button) {
       button.addEventListener('click', toggleTheme);
     }
+  }
+
+  // Set up event listeners when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      initTheme();
+      setupButton();
+    });
+  } else {
+    initTheme();
+    setupButton();
   }
 
   // Listen for system theme changes when no preference is stored
