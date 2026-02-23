@@ -162,7 +162,6 @@ This summary excludes:
 
 - [OSM Wiki: Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)
 - [OSM Wiki: Accessibility](https://wiki.openstreetmap.org/wiki/Accessibility)
-- [OSM Wiki: Physical disabilities](https://wiki.openstreetmap.org/wiki/Key:wheelchair:physical)
 - [Wheelmap.org](https://wheelmap.org): Public OSM-based accessibility map
 
 ## Maintenance Notes
