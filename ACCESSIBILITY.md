@@ -45,7 +45,7 @@ See also: [Accessibility Statement](/about/accessibility-statement/) for our det
 **Code References:**
 - [`assets/main.scss`](assets/main.scss) lines 216-220 (focus styles)
 - [`assets/main.scss`](assets/main.scss) lines 268-280 (keyboard-accessible dropdowns)
-- [`_includes/header.html`](/_includes/header.html) line 23 (tabindex on group titles)
+- [`_includes/header.html`](_includes/header.html) line 23 (tabindex on group titles)
 
 ### 3.3 Dark Mode Support
 - Manual dark/light mode toggle with accessible button
@@ -57,7 +57,7 @@ See also: [Accessibility Statement](/about/accessibility-statement/) for our det
 **Code References:**
 - [`assets/theme-toggle.js`](assets/theme-toggle.js) (complete implementation)
 - [`assets/main.scss`](assets/main.scss) lines 31-72 (dark mode color variables)
-- [`_includes/header.html`](/_includes/header.html) line 34 (theme toggle button)
+- [`_includes/header.html`](_includes/header.html) line 34 (theme toggle button)
 
 ### 3.4 Semantic HTML and ARIA
 - Proper use of semantic HTML5 elements (`<header>`, `<nav>`, `<main>`, `<footer>`)
@@ -65,7 +65,7 @@ See also: [Accessibility Statement](/about/accessibility-statement/) for our det
 - ARIA labels on interactive controls (theme toggle button)
 - Form controls properly associated with labels
 
-**Code Reference:** [`_includes/header.html`](/_includes/header.html) line 1 (role="banner")
+**Code Reference:** [`_includes/header.html`](_includes/header.html) line 1 (role="banner")
 
 ### 3.5 Link Accessibility
 - Links have clear, descriptive text

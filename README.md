@@ -25,6 +25,8 @@ The Building Access Guide Toolkit helps organizations provide the specific, oper
 
 We welcome contributions of new templates, examples, and improvements to the framework. See [CONTRIBUTING.md]({{ "/community/contribute/" | relative_url }}) for details.
 
+**Digital Accessibility:** This toolkit website follows WCAG 2.2 AA standards. See [ACCESSIBILITY.md](/ACCESSIBILITY.md) for our digital accessibility commitment and contributor requirements.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
