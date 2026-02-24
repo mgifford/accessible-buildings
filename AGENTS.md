@@ -14,6 +14,8 @@ It is not a digital accessibility statement generator. It is a publishing framew
 
 The site is built for GitHub Pages with Jekyll.
 
+**Note:** For information about the digital accessibility of this toolkit website itself (WCAG compliance, testing, etc.), see [ACCESSIBILITY.md](../ACCESSIBILITY.md).
+
 ## Non-negotiables
 
 - HTML-first. PDFs may be offered as secondary downloads only.
@@ -160,6 +162,8 @@ The repository is successful when an organization can:
 This site publishes guidance about accessibility. It must model best practice.
 
 All content and code in this repository must meet WCAG 2.2 AA at minimum.
+
+**For complete details, implementation examples, testing procedures, and contributor requirements, see [ACCESSIBILITY.md](../ACCESSIBILITY.md).**
 
 This requirement applies to:
 - All templates
