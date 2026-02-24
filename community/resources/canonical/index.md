@@ -14,6 +14,7 @@ We maintain structured extracts of key accessibility guidance and international 
 - **[Maintaining Accessibility in Museums (2009)]({{ "/community/resources/canonical/2009-USDOJ-MaintainingAccessibilityInMuseums/" | relative_url }}):** US Department of Justice guidance on operational accessibility.
 - **[Australian Government Building Accessibility Guide]({{ "/community/resources/canonical/AustralianGov-BuildingAccessibilityGuide/" | relative_url }}):** Standards for public sector accessibility guides.
 - **[OpenStreetMap Accessibility Tagging]({{ "/community/resources/canonical/OpenStreetMap-AccessibilityTagging/" | relative_url }}):** Community-maintained standards for machine-readable accessibility metadata.
+- **[W3C Cognitive Accessibility: Wayfinding]({{ "/community/resources/canonical/W3C-CognitiveAccessibilityWayfinding/" | relative_url }}):** Guidance on wayfinding systems that support people with cognitive disabilities, including design principles for physical buildings.
 - **[Sesame Place Philadelphia Sensory Guide (2025)]({{ "/community/resources/canonical/2025-SesamePlace-SensoryGuide/" | relative_url }}):** Framework for documenting sensory characteristics of attractions and experiences.
 - **[Sesame Place Philadelphia Park Accessibility Guide (2025)]({{ "/community/resources/canonical/2025-SesamePlace-ParkAccessibilityGuide/" | relative_url }}):** Comprehensive model for attraction-level accessibility documentation in multi-experience venues.
 

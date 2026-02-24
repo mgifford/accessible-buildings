@@ -39,3 +39,21 @@
   url: "https://wiki.openstreetmap.org/wiki/Key:wheelchair"
   type: "Technical standard"
   notes: "Community-maintained accessibility tagging standards for wheelchair access, doors, facilities, and navigation aids. Use for structured, machine-readable metadata."
+
+- title: "Making Content Usable for People with Cognitive and Learning Disabilities: Wayfinding"
+  org: "W3C Web Accessibility Initiative"
+  url: "https://www.w3.org/TR/coga-wayfinding/"
+  type: "Technical Report"
+  notes: "Guidance on wayfinding systems that support people with cognitive disabilities, including clear signage, landmarks, and navigation cues."
+
+- title: "Supplemental Guidance: Supported Wayfinding"
+  org: "W3C Web Accessibility Initiative"
+  url: "https://www.w3.org/WAI/WCAG2/supplemental/patterns/o7p06-supported-wayfinding/"
+  type: "Pattern"
+  notes: "Design patterns for implementing effective wayfinding support in digital and physical environments."
+
+- title: "Way-finding Systems Research"
+  org: "W3C Web Accessibility Initiative"
+  url: "https://www.w3.org/WAI/RD/wiki/Way-finding_systems"
+  type: "Research & Wiki"
+  notes: "Research documentation on wayfinding systems, their importance for accessibility, and implementation considerations."
