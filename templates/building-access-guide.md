@@ -56,6 +56,7 @@ permalink: /templates/building-access-guide/
 - **Lifts:** [Dimensions: Width x Depth, Weight limit, Voice announcements?]
 - **Clear Route Width:** [Minimum width of paths, e.g., 900mm]
 - **Signage:** [High contrast? Braille? Large print?]
+- **Wayfinding System:** [Describe the wayfinding aids: color-coded routes, consistent landmarks, numbered rooms, directional arrows, clear entry and exit markers]
 - **Tactile Maps:** [Available at reception? 3D printed models available for orientation?]
 - **Building Map:** [Link to a simplified, accessible floor plan or interactive map]
 - **Level-by-Level Description:** [Briefly describe the layout of each floor, highlighting accessible routes]

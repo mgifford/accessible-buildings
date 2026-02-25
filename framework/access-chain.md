@@ -34,8 +34,8 @@ Passing through the threshold.
 
 ### 5. Navigation
 Moving within the building.
-- **Failures:** Broken lifts, narrow corridors, temporary displays blocking routes, lack of clear signage.
-- **Goal:** Provide clear path widths and lift dimensions.
+- **Failures:** Broken lifts, narrow corridors, temporary displays blocking routes, lack of clear signage, missing or confusing wayfinding systems.
+- **Goal:** Provide clear path widths, lift dimensions, and describe wayfinding aids (color-coded routes, landmarks, directional signs).
 
 ### 6. Participation
 Engaging with the building's purpose (exhibits, service counters, programs).

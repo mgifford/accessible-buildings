@@ -25,9 +25,10 @@ permalink: /templates/maintenance-checklist/
 - Lift buttons and voice announcements work.
 - Handrails on stairs and ramps are secure.
 
-### [ ] Signage and Objects
+### [ ] Signage and Wayfinding
 - Tactile signage is clean and undamaged.
 - No temporary signs blocking permanent signage.
+- Wayfinding cues (color-coded routes, directional arrows, landmarks) are visible and unobstructed.
 - Objects at head-height are removed or made cane-detectable.
 
 ---
