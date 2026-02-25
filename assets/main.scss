@@ -111,10 +111,15 @@ a {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
+    gap: 1rem;
     min-height: 80px !important;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media screen and (max-width: 820px) {
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -127,6 +132,11 @@ a {
   color: var(--brand-color) !important;
   text-decoration: none !important;
   float: none !important; // Override minima
+
+  @media screen and (max-width: 820px) {
+    flex: 1;
+    order: 1;
+  }
 
   .site-logo {
     height: 48px !important;
@@ -141,6 +151,10 @@ a {
 .site-nav {
   float: none !important;
   line-height: normal !important;
+
+  @media screen and (max-width: 820px) {
+    order: 2;
+  }
 
   // Mobile Toggle Control
   .nav-trigger {
@@ -430,9 +444,9 @@ table {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  margin-left: 1rem;
   min-width: 44px;
   min-height: 44px;
+  flex-shrink: 0;
 
   &:hover {
     background: var(--nav-link-bg-hover);
@@ -445,7 +459,6 @@ table {
   }
 
   @media screen and (max-width: 820px) {
-    margin-left: 0;
-    margin-top: 0.5rem;
+    order: 3;
   }
 }
