@@ -58,10 +58,29 @@ permalink: /templates/building-access-guide/
 - **Signage:** [High contrast? Braille? Large print?]
 - **Wayfinding System:** [Describe the wayfinding aids: color-coded routes, consistent landmarks, numbered rooms, directional arrows, clear entry and exit markers]
 - **Digital Wayfinding:** [If applicable, describe digital navigation aids: NaviLens codes, mobile app with indoor navigation, Bluetooth beacons, NFC tags. Include information on where to download required apps]
+- **Audio Descriptions:** [Describe audio navigation support: Available on website in text-to-speech format, pre-recorded audio routes to key facilities, staff can provide verbal directions. See [Audio Descriptions Framework](/framework/audio-descriptions/) for implementation guidance]
 - **Tactile Maps:** [Available at reception? 3D printed models available for orientation?]
 - **Building Map:** [Link to a simplified, accessible floor plan or interactive map]
 - **Level-by-Level Description:** [Briefly describe the layout of each floor, highlighting accessible routes]
 - **Temporary Barriers:** [How we manage event barriers or queue lines]
+
+### Audio Route Descriptions
+*Detailed spoken directions to commonly requested facilities.*
+
+#### To Accessible Toilets
+[Provide step-by-step directions from the main entrance, including distances, landmarks, and turns. Example: "From the main entrance, continue straight for 15 meters past the information desk on your left. At the corridor intersection, turn right. The accessible toilet is the second door on your left, marked with the International Symbol of Access."]
+
+#### To Cafe/Restaurant
+[Provide clear directions from main entrance with distances and landmarks]
+
+#### To Quiet Space
+[Provide clear directions from main entrance with distances and landmarks]
+
+#### To Lifts
+[Provide clear directions from main entrance with distances and landmarks]
+
+> [!TIP]
+> **Text-to-Speech:** This page works with browser reading modes (Edge, Safari, Chrome extensions). Click the 🔊 Read Aloud button if available.
 
 ---
 

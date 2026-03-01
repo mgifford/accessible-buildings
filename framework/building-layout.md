@@ -69,12 +69,15 @@ Consider implementing digital navigation aids that enhance independence for blin
 - **Bluetooth beacons:** Trigger location-specific information on visitors' smartphones
 - **NFC tags:** Provide information when visitors tap their phone to a sign or location marker
 - **Indoor positioning systems:** GPS-like navigation within buildings using Wi-Fi or Bluetooth
+- **Text-to-speech on website:** Implement read-aloud functionality for route descriptions and facility information
+- **Pre-recorded audio routes:** Professional recordings for common destinations (toilets, exits, facilities)
 
 When implementing digital wayfinding:
 - Ensure codes/beacons are placed at consistent heights and locations
 - Provide instructions for downloading and using required apps (at entrance, on website)
 - Maintain a fallback system (staff assistance, printed guides) for visitors without smartphones
 - Test with members of the blind and low-vision community before deployment
+- Consider text-to-speech for website content - see [Audio Descriptions Framework](/framework/audio-descriptions/)
 
 For detailed guidance on wayfinding for people with cognitive disabilities, see the [W3C Wayfinding guidance](https://www.w3.org/TR/coga-wayfinding/).
 
