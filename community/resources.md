@@ -8,6 +8,16 @@ permalink: /community/resources/
 
 This toolkit is built on existing best practices and international frameworks. Here are the key resources that inform our guidance.
 
+---
+
+## Quick Navigation
+
+- **[Facility Standards and Design Guidance]({{ "/community/facility-standards/" | relative_url }}):** Building codes, technical standards, and universal design principles for physical infrastructure
+- **[Canonical Reference Extracts]({{ "/community/resources/canonical/" | relative_url }}):** Preserved summaries of key operational guidance
+- **[Best Practices Case Studies]({{ "/community/resources/sesame-place-best-practices/" | relative_url }}):** Real-world examples of comprehensive accessibility documentation
+
+---
+
 ## Frameworks and Guidance
 
 {% for resource in site.data.resources %}
@@ -26,7 +36,7 @@ This toolkit is built on existing best practices and international frameworks. H
 ## Technical Standards
 
 - **[WCAG 2.2 (W3C)](https://www.w3.org/TR/WCAG22/):** The global standard for web accessibility. This toolkit follows WCAG 2.2 AA.
-- **[ISO 21542:2021](https://www.iso.org/standard/71518.html):** Building construction — Accessibility and usability of the built environment.
+- **For physical infrastructure standards** (ADA, ISO, EN standards), see our [Facility Standards page]({{ "/community/facility-standards/" | relative_url }}).
 - **[OpenStreetMap Accessibility](https://wiki.openstreetmap.org/wiki/Key:wheelchair):** Community-maintained accessibility tagging standards for machine-readable metadata. See our [OSM tagging reference]({{ "/community/resources/canonical/OpenStreetMap-AccessibilityTagging/" | relative_url }}).
 
 ## Featured: Tactile Mapping
@@ -41,6 +51,16 @@ Tactile maps are essential for visitors who are blind or have low vision. Modern
 We maintain structured extracts of key guidance documents to ensure their operational insights are preserved.
 
 - [View Canonical Resources]({{ "/community/resources/canonical/" | relative_url }})
+
+---
+
+## Physical Infrastructure Standards
+
+For building codes, technical specifications, and universal design principles, see:
+
+- **[Facility Standards and Design Guidance]({{ "/community/facility-standards/" | relative_url }}):** Comprehensive collection of ADA standards, ISO standards, European standards, Canadian standards, and universal design frameworks
+
+---
 
 ## Best Practices Case Studies
 
