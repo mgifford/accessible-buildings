@@ -15,6 +15,10 @@ This toolkit is built on existing best practices and international frameworks. H
 - **[Facility Standards and Design Guidance]({{ "/community/facility-standards/" | relative_url }}):** Building codes, technical standards, and universal design principles for physical infrastructure
 - **[Canonical Reference Extracts]({{ "/community/resources/canonical/" | relative_url }}):** Preserved summaries of key operational guidance
 - **[Best Practices Case Studies]({{ "/community/resources/sesame-place-best-practices/" | relative_url }}):** Real-world examples of comprehensive accessibility documentation
+- **[Emergency Readiness Resources]({{ "/framework/emergency-readiness/" | relative_url }}):** Comprehensive emergency preparedness framework
+  - [Digital-to-Physical Resilience]({{ "/community/resources/emergency-digital-physical/" | relative_url }})
+  - [Advanced Digital Accessibility]({{ "/community/resources/emergency-digital-accessibility/" | relative_url }})
+  - [Disability-Inclusive Disaster Infrastructure]({{ "/community/resources/emergency-disability-inclusive/" | relative_url }})
 
 ---
 

@@ -134,3 +134,71 @@
   url: "https://www.w3.org/WAI/media/av/"
   type: "Guidance"
   notes: "Comprehensive guidance on creating accessible audio and video content, including captions, transcripts, and audio descriptions."
+
+# Emergency Readiness & Digital Resilience
+
+- title: "FEMA: Planning Considerations for Putting People First (2024)"
+  org: "FEMA"
+  url: "https://web.archive.org/web/20250118002914/https://www.fema.gov/sites/default/files/documents/fema_npd_planning-considerations-putting-people-first_2024.pdf"
+  type: "Policy Framework"
+  notes: "Foundational guide for Whole Community planning in emergency operations with focus on equity and accessibility."
+
+- title: "Section 508: Emergency Response Policy Framework"
+  org: "U.S. General Services Administration"
+  url: "https://www.section508.gov/manage/policy-framework/guidance-by-policy-type/emergency-response/"
+  type: "Policy Framework"
+  notes: "Legal and technical baseline for accessibility in federal digital emergency communications."
+
+- title: "UNDRR Strategic Framework 2026-2030"
+  org: "United Nations Office for Disaster Risk Reduction"
+  url: "https://www.undrr.org/strategic-framework-2026-2030"
+  type: "Global Policy"
+  notes: "Global framework for locally-led disaster risk reduction with rights-based inclusion mandates."
+
+- title: "W3C Web Sustainability Guidelines (WSG) 1.0"
+  org: "W3C"
+  url: "https://www.w3.org/TR/web-sustainability-guidelines/"
+  type: "Technical Standard"
+  notes: "Designing 'Survival UX' that functions on low battery and poor connections. Critical for emergency contexts."
+
+- title: "P-CEP: Person-Centred Emergency Preparedness Toolkit"
+  org: "Collaborating4Inclusion"
+  url: "https://collaborating4inclusion.org/pcep/"
+  type: "Planning Tool"
+  notes: "Capability-based framework for mapping support needs (Communication, Mobility, Power) before disasters."
+
+- title: "Partnership for Inclusive Disaster Strategies (PIDS)"
+  org: "PIDS"
+  url: "https://disasterstrategies.org/"
+  type: "Advocacy Organization"
+  notes: "Leading advocate for disability rights in disaster response. Home of the REAADI for Disasters Act."
+
+- title: "FEMA Office of Disability Integration and Coordination (ODIC)"
+  org: "FEMA"
+  url: "https://www.fema.gov/about/offices/disability"
+  type: "Government Office"
+  notes: "Official technical assistance for inclusive emergency management at the federal level."
+
+- title: "Glia: Open Source Medical Devices"
+  org: "Glia"
+  url: "https://glia.org/"
+  type: "Distributed Manufacturing"
+  notes: "Open-source designs for 3D-printable medical supplies (tourniquets, stethoscopes) for on-site production during emergencies."
+
+- title: "Field Ready: Local Manufacturing for Humanitarian Relief"
+  org: "Field Ready"
+  url: "https://www.fieldready.org/"
+  type: "Distributed Manufacturing"
+  notes: "Pioneering localized humanitarian response through 3D printing, laser cutting, and CNC routing for immediate disaster relief."
+
+- title: "TapSOS Emergency App"
+  org: "TapSOS"
+  url: "https://tapsos.com/"
+  type: "Emergency Communication App"
+  notes: "Non-verbal emergency reporting (911/999) using visual, icon-based interface for Deaf, non-verbal, or high-stress users."
+
+- title: "Kiwix: Offline Wikipedia & Educational Content"
+  org: "Kiwix"
+  url: "https://www.kiwix.org/"
+  type: "Offline Content Platform"
+  notes: "Download entire websites (Wikipedia, WikiHow) for offline access during network outages. Essential for shelter digital libraries."

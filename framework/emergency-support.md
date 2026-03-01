@@ -34,5 +34,14 @@ When describing your facilities, always include:
 - **Vibrating Pagers:** Do you offer vibrating pagers for visitors who might not hear the audible alarm?
 
 ---
+
+## Comprehensive Emergency Readiness
+
+For a complete framework on emergency readiness that bridges digital and physical accessibility, including multi-platform communication strategies and digital-to-physical resilience planning, see:
+
+- **[Emergency Readiness & Digital Resilience]({{ "/framework/emergency-readiness/" | relative_url }}):** Translation layer between technical standards and practical emergency needs, digital-to-physical backup strategies, and multi-platform redundancy.
+
+---
+
 > [!NOTE]
 > Refer to [EN 301 549 Clause 13](https://accessible.canada.ca/creating-accessibility-standards/canasc-en-301-5492024-accessibility-requirements-ict-products-and-services?mode=full-html#s13) for detailed technical requirements on ICT-based emergency service access.
