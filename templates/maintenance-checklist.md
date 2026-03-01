@@ -44,8 +44,6 @@ permalink: /templates/maintenance-checklist/
 - Access guide URL is functioning.
 - "Last Updated" date on website is refreshed.
 - Contact phone/email for access queries is monitored.
-- Photos on access guide are current and reflect actual conditions.
-- Photos have accurate alt text describing functional features.
 
 ### [ ] Shop and Cafe Layout
 - Mannequins or merchandise displays have not narrowed accessible paths.
