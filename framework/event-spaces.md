@@ -87,7 +87,7 @@ Event organizers **must**:
 - Verify its accuracy before the event
 
 **Example event page language:**
-> For information about the building's physical accessibility (entrances, lifts, toilets, parking), see the [Venue Access Guide](link).
+> For information about the building's physical accessibility (entrances, lifts, toilets, parking), see the [Venue Access Guide](#).
 >
 > Event-specific accessibility details are provided below.
 
@@ -172,7 +172,7 @@ When you book our space, we provide:
 ## Venue Access
 
 For information about the venue's physical accessibility (parking, entrances, lifts, toilets), 
-see the [Venue Building Access Guide](link).
+see the [Venue Building Access Guide](#).
 
 ## Event-Specific Accessibility
 
