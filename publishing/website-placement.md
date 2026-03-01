@@ -17,6 +17,46 @@ Don't bury your accessibility page in a sub-menu. It must be visible from these 
 3. **Contact Page:** Provide access info alongside your address and phone number.
 4. **Visit / Plan Your Visit Pages:** This is where visitors look for logistical info.
 5. **Event Pages:** Every event listing should link back to the building's access details.
+6. **Event/Conference Space Booking Pages:** If you rent space for events, link to the building access guide and provide guidance for event organizers. See [Event Spaces Framework](/framework/event-spaces/).
+
+## Event-Specific Linking (For Buildings Hosting Events)
+
+If your building hosts conventions, conferences, or meetings:
+
+### On Your Building Website
+
+**"Host an Event" or "Book Our Space" Pages:**
+```
+When you book our space, we provide:
+- A detailed Building Access Guide covering entrances, navigation, and facilities
+- Support for incorporating accessibility into your event planning
+- Contact: [accessibility coordinator]
+
+[Link to Building Access Guide]
+```
+
+**Individual Event Listings:**
+```
+Accessibility: See [Building Access Guide] for venue details.
+Event-specific accessibility: [Link to event organizer's page or "contact organizer"]
+```
+
+### For Event Organizers Using Your Space
+
+Provide this guidance to event organizers:
+
+**On Event Pages:**
+```
+## Venue Access
+For information about the venue's physical accessibility (parking, entrances, lifts, toilets), 
+see the [Venue Building Access Guide](link).
+
+## Event-Specific Accessibility
+[Event organizer provides: captions, interpreting, seating, schedule, food, quiet space details]
+Questions? Contact: [event accessibility coordinator]
+```
+
+Event organizers should use the [Event Space Template](/templates/event-space-template/) to document event-specific details that build on your building's baseline accessibility.
 
 ## Recommended URL Patterns
 

@@ -49,6 +49,49 @@ permalink: /templates/maintenance-checklist/
 - Mannequins or merchandise displays have not narrowed accessible paths.
 - Low counter sections are not used for storage.
 
+### [ ] Event Space Preparations (If Applicable)
+- Building access guide has been provided to event organizers.
+- Event organizers have been contacted about accessibility requirements.
+- Contracts specify requirement to maintain accessible routes during setup.
+
+---
+
+## Event-Day Checks (For Buildings Hosting Events)
+
+Use these additional checks on days when conventions, conferences, or meetings are held.
+
+### [ ] Pre-Event Walkthrough (Before Doors Open)
+- All accessible routes remain clear (minimum 900mm width maintained).
+- Temporary barriers (queue lines, registration tables) do not block accessible paths.
+- Cables and AV equipment are covered, secured, or routed to avoid trip hazards.
+- Steps, cables, or low obstacles marked with high-contrast tape.
+- Permanent wayfinding signage not obscured by banners, posters, or temporary signs.
+- Event signage placed without blocking permanent accessibility features.
+
+### [ ] Assistive Systems (Before Sessions Begin)
+- Hearing loops tested and functional in all rooms being used.
+- Microphones tested (including handheld for Q&A).
+- Caption displays tested and positioned for visibility from wheelchair spaces.
+- Interpretation positions have clear sightlines.
+
+### [ ] Facilities During Event
+- Accessible toilets remain accessible (not blocked or repurposed).
+- Quiet space available and monitored for appropriate use.
+- Seating areas not blocked by event materials or equipment.
+
+### [ ] Staff Briefing
+- Staff and volunteers briefed on accessible entrances, toilets, and routes.
+- Staff know how to direct attendees to quiet space, accessible seating, assistive listening.
+- Staff know the accessibility contact person and emergency procedures.
+
+### [ ] Post-Event Restoration
+- Event materials removed from accessible routes.
+- Permanent signage restored to full visibility.
+- Facility returned to baseline accessible state.
+- Any accessibility issues noted during event documented for improvement.
+
+See [Event Spaces Framework](/framework/event-spaces/) for full guidance on shared responsibility between building and event organizers.
+
 ---
 
 ## Quarterly / Annual Review

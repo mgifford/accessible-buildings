@@ -16,6 +16,7 @@ Use these templates to build your building access guide. You can copy the raw ma
 - **[Sensory Profile]({{ "/templates/sensory-profile/" | relative_url }}):** Information for visitors with sensory processing needs.
 - **[Arrival Guidance]({{ "/templates/arrival-template/" | relative_url }}):** Detailed instructions for parking, transit, and finding the entrance.
 - **[Facilities Detail]({{ "/templates/facilities-template/" | relative_url }}):** Specifics on toilets, Changing Places, and seating.
+- **[Event Space Template]({{ "/templates/event-space-template/" | relative_url }}):** For event organizers to document event-specific accessibility (captions, interpreting, seating) that builds on venue baseline. See [Event Spaces Framework](/framework/event-spaces/) for the shared responsibility model.
 
 ## Internal Tools
 - **[Maintenance Checklist]({{ "/templates/maintenance-checklist/" | relative_url }}):** An operational tool to ensure accessibility features remain functional.

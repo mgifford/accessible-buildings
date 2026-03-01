@@ -118,7 +118,24 @@ permalink: /templates/building-access-guide/
 
 ---
 
-## 8. What Is Not Accessible
+## 8. Event Spaces (If Applicable)
+*For buildings that host conventions, conferences, or temporary events.*
+
+This building access guide covers **permanent building features**. If you are hosting or attending an event at this facility, event-specific accessibility information (captions, interpreting, event seating, schedule) should be provided separately by the event organizer.
+
+**Event Organizers:**
+- Please link to this Building Access Guide from your event accessibility page
+- Provide event-specific details using the [Event Space Template](/templates/event-space-template/)
+- See [Event Spaces Framework](/framework/event-spaces/) for guidance on shared responsibility
+
+**For Event Booking Inquiries:**
+- Contact: [Event Coordinator Name/Email]
+- We provide this access guide proactively to all event organizers
+- We require event setups to maintain accessible routes and clear wayfinding
+
+---
+
+## 9. What Is Not Accessible
 *Honest transparency about known barriers.*
 
 - **[Area/Feature]:** [Reason for barrier and any available workaround]
