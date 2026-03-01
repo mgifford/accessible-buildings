@@ -8,6 +8,9 @@ permalink: /framework/audio-descriptions/
 
 Text and audio descriptions of routes and facilities are essential accessibility features. Many disabled visitors benefit from having information available in audio format, whether through screen readers, text-to-speech tools, or pre-recorded audio.
 
+> [!NOTE]
+> **Try It Yourself:** See our [Audio Navigation Example](/framework/audio-navigation-example/) for a working demonstration of text-to-speech route descriptions. Click the 🔊 Read Aloud button or use your browser's reading mode.
+
 ## Why Audio Matters
 
 Audio descriptions serve multiple accessibility needs:
@@ -209,6 +212,7 @@ Document your audio support in your maintenance checklist:
 
 ## Resources
 
+- [Audio Navigation Example](/framework/audio-navigation-example/) - Working demonstration of audio route descriptions
 - [Web Speech API - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 - [Microsoft Edge Immersive Reader](https://support.microsoft.com/en-us/topic/use-immersive-reader-in-microsoft-edge-78a7a17d-52e1-47ee-b0ac-eff8539015e1)
 - [WCAG 2.2 Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html)
@@ -217,4 +221,4 @@ Document your audio support in your maintenance checklist:
 ---
 
 > [!TIP]
-> **Start Simple:** Begin by ensuring your content works well with browser reading modes. Add enhanced TTS features only after confirming basic accessibility is solid.
+> **Start Simple:** Begin by ensuring your content works well with browser reading modes. Add enhanced TTS features only after confirming basic accessibility is solid. See our [Audio Navigation Example](/framework/audio-navigation-example/) for a working demonstration.
