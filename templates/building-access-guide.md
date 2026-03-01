@@ -61,6 +61,7 @@ permalink: /templates/building-access-guide/
 - **Audio Descriptions:** [Describe audio navigation support: Available on website in text-to-speech format, pre-recorded audio routes to key facilities, staff can provide verbal directions. See [Audio Descriptions Framework](/framework/audio-descriptions/) for implementation guidance]
 - **Tactile Maps:** [Available at reception? 3D printed models available for orientation?]
 - **Building Map:** [Link to a simplified, accessible floor plan or interactive map]
+- **Photos:** [Include photos showing typical routes, corridor widths, lift interiors, and signage at key decision points. Each photo should have descriptive alt text. See [Photo Guidance](/framework/photo-guidance/) for accessibility requirements]
 - **Level-by-Level Description:** [Briefly describe the layout of each floor, highlighting accessible routes]
 - **Temporary Barriers:** [How we manage event barriers or queue lines]
 
@@ -91,6 +92,7 @@ permalink: /templates/building-access-guide/
 - **Changing Places:** [Location and equipment provided]
 - **Seating:** [Frequent seating available? With armrests?]
 - **Quiet Spaces:** [Location and sensory conditions]
+- **Photos:** [Include photos of accessible toilets showing transfer space and grab rails, seating areas showing variety and armrest options, and quiet spaces showing layout and sensory features. Each photo must have descriptive alt text explaining functional details. See [Photo Guidance](/framework/photo-guidance/)]
 
 ---
 
@@ -101,6 +103,7 @@ permalink: /templates/building-access-guide/
 - **Captions/Transcripts:** [Available for videos/tours?]
 - **Tactile Materials:** [Tactile maps/models available?]
 - **Staff Training:** [Our staff are trained in disability awareness and assistance.]
+- **Seating for Events:** [For events with seating, describe designated wheelchair spaces, sightlines to stages/screens/interpreters, proximity to caption displays. Include photos showing seating arrangements from wheelchair-accessible positions. See [Photo Guidance](/framework/photo-guidance/) for documenting event spaces]
 
 ---
 

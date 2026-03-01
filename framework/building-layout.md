@@ -31,6 +31,7 @@ If your building has multiple floors, provide a way to switch between levels.
 Maps are highly visual. You MUST provide a text-based alternative.
 - **Tactile Maps:** State if you have physical tactile maps available at reception for blind or low-vision visitors.
 - **Detailed Alt-Text:** Describe the layout in words: "The ground floor contains the cafe to the left of the entrance and the accessible toilets at the far end of the main corridor."
+- **Photos:** Consider supplementing maps with photos showing actual routes, corridors, and spaces. Photos help sighted visitors with disabilities understand spatial relationships and plan their positioning. See [Photo Guidance](/framework/photo-guidance/) for accessible implementation.
 
 ## Interactive vs. Static
 - **Static Images:** High-contrast, scalable SVG or high-resolution PNG files.

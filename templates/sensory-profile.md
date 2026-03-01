@@ -27,6 +27,8 @@ This guide helps visitors with sensory processing needs, including autistic peop
 | [Gallery A] | Low | Low | Low |
 | [Cafe] | Medium | High | High |
 
+**Photos:** [Include photos of each zone showing lighting levels, spatial layout, and typical crowd density. Photos help visitors visualize sensory conditions and prepare for the environment. Each photo must include alt text describing sensory characteristics. See [Photo Guidance](/framework/photo-guidance/)]
+
 ---
 
 ## Supports Available

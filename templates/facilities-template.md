@@ -22,6 +22,7 @@ Detailed accessibility information for the essential services within our buildin
 - **Fixtures and Contrast:** [e.g., Grab rails contrast with the wall color (Yes/No), Toilet seat contrasts with the bowl (Yes/No)]
 - **Sink and Dryer:** [e.g., Height of sink, automatic or manual taps, height of hand dryer]
 - **Emergency System:** [e.g., Red pull cord reaching the floor, Reset button reachable from the toilet, Response protocol in place]
+- **Photos:** [Include photos showing the layout, transfer space, grab rail positions (including which side), and emergency cord. Photos help users assess whether the space meets their specific needs. All photos must have descriptive alt text explaining functional details. See [Photo Guidance](/framework/photo-guidance/)]
 
 ## 2. Changing Places Toilet
 
@@ -38,6 +39,7 @@ Detailed accessibility information for the essential services within our buildin
 - **Frequent Seating:** [e.g., Benches available every 20 meters]
 - **Seating Types:** [e.g., With armrests, varying heights, stools]
 - **Priority Areas:** [Spaces reserved for disabled visitors]
+- **Photos:** [Include photos showing seating variety, armrest availability, and positioning. For event spaces, show wheelchair seating positions with sightlines to stages, screens, and interpreter locations. All photos must include alt text describing functional features. See [Photo Guidance](/framework/photo-guidance/)]
 
 ## 4. Quiet and Sensory Spaces
 
@@ -58,6 +60,7 @@ Detailed accessibility information for the essential services within our buildin
 - **Ambient Noise Level:** [Very quiet/Quiet/Moderate - describe any background sounds]
 - **Lighting:** [e.g., Dimmable LED lights, controls at 1000mm height, natural light with blackout curtains]
 - **Temperature Control:** [User-controlled/Fixed temperature]
+- **Photos:** [Include photos showing the overall layout, seating arrangements, lighting controls, and acoustic features. Photos help visitors understand the sensory environment and prepare mentally. All photos must have descriptive alt text. See [Photo Guidance](/framework/photo-guidance/)]
 
 ### Seating and Space
 

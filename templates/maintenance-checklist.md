@@ -44,10 +44,26 @@ permalink: /templates/maintenance-checklist/
 - Access guide URL is functioning.
 - "Last Updated" date on website is refreshed.
 - Contact phone/email for access queries is monitored.
+- Photos on access guide are current and reflect actual conditions.
+- Photos have accurate alt text describing functional features.
 
 ### [ ] Shop and Cafe Layout
 - Mannequins or merchandise displays have not narrowed accessible paths.
 - Low counter sections are not used for storage.
+
+---
+
+## Quarterly / Annual Review
+
+### [ ] Photo and Visual Content Review
+- Review all photos in access guide for accuracy and currency.
+- Replace photos after renovations, layout changes, or significant updates.
+- Update photos of seating arrangements if configurations have changed.
+- Verify photo alt text is accurate and descriptive.
+- Check that photos show current wayfinding signage and route markers.
+- Document photo updates in the website change log.
+
+See [Photo Guidance](/framework/photo-guidance/) for maintaining visual accessibility content.
 
 ---
 
