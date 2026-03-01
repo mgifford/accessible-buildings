@@ -35,6 +35,10 @@ This guide helps visitors with sensory processing needs, including autistic peop
 - **Sensory Kits:** [Available from reception? Includes noise-canceling headphones, fidget toys, etc.]
 - **Sensory-Friendly Hours:** [Days and times with reduced noise and lighting]
 - **Social Scripts:** [Link to a social script/story for visiting the building]
+- **Audio Navigation Support:** [Text-to-speech available on website for route descriptions, or staff can provide verbal directions]
+
+> [!TIP]
+> **Reading Support:** This page works with browser reading modes (Edge, Safari) for audio navigation. Click the 🔊 Read Aloud button if available.
 
 ---
 
