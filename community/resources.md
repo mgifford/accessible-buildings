@@ -66,6 +66,35 @@ For building codes, technical specifications, and universal design principles, s
 
 ---
 
+## Emergency Preparedness Resources
+
+For comprehensive guidance on inclusive emergency management, we maintain specialized resource directories:
+
+### Emergency Readiness Framework
+- **[Emergency Readiness]({{ "/framework/emergency-readiness/" | relative_url }}):** Strategic overview of digital-to-physical resilience, multi-platform redundancy, and accessible emergency communications
+
+### Specialized Emergency Resource Directories
+
+1. **[Digital-to-Physical Resilience & Distributed Manufacturing]({{ "/community/resources/emergency-digital-physical/" | relative_url }})**
+   - Distributed manufacturing and medical supplies
+   - Print-ready emergency guides and templates
+   - Tactile and sensory physical media
+   - Technology for offline portability
+
+2. **[Advanced Digital Accessibility & Multi-Platform Communications]({{ "/community/resources/emergency-digital-accessibility/" | relative_url }})**
+   - Strategic planning and policy frameworks
+   - Multi-platform and tactical communication
+   - Academic and technological research
+   - Implementation best practices
+
+3. **[Disability-Inclusive & Sustainable Infrastructure]({{ "/community/resources/emergency-disability-inclusive/" | relative_url }})**
+   - Policy and global standards
+   - Sustainable and resilient digital design
+   - Implementation and advocacy tools
+   - Government and local registry examples
+
+---
+
 ## Best Practices Case Studies
 
 Learn from real-world examples of comprehensive accessibility documentation:
