@@ -49,7 +49,7 @@ Provide this guidance to event organizers:
 ```
 ## Venue Access
 For information about the venue's physical accessibility (parking, entrances, lifts, toilets), 
-see the [Venue Building Access Guide](link).
+see the [Venue Building Access Guide](#).
 
 ## Event-Specific Accessibility
 [Event organizer provides: captions, interpreting, seating, schedule, food, quiet space details]

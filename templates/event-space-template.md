@@ -23,7 +23,7 @@ permalink: /templates/event-space-template/
 
 For detailed information about the venue building's physical accessibility (parking, entrances, lifts, toilets, navigation), see:
 
-**[Venue Name Building Access Guide](link-to-venue-guide)**
+**[Venue Name Building Access Guide](#)** *(Replace `#` with actual link to venue's building access guide)*
 
 The venue guide covers:
 - Arrival by transit, taxi, and car
