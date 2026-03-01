@@ -59,7 +59,7 @@ pre {
 - Jekyll 4.4.1
 - Minima theme 2.5
 - Browser: Chromium (Playwright)
-- Date: March 1, 2026
+- Test Date: March 1, 2026
 
 ### Light Mode Test Results ✅
 **Computed Styles:**
