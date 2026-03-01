@@ -12,9 +12,9 @@ Accessible emergency preparedness bridges physical building infrastructure and d
 
 Understanding how accessibility standards align with emergency needs helps prioritize what matters most when lives are at risk.
 
-| **Pillar** | **WCAG 2.2 Role** | **WSG 1.0 Role** | **Plain Language Role** |
-|------------|-------------------|------------------|-------------------------|
-| **Alerts** | Ensures screen readers can announce "Flash Alerts" immediately. | Minimizes payload so alerts don't fail on congested networks. | Replaces "Evacuate the vicinity" with "Leave the area now." |
+| **Content Type** | **WCAG 2.2 Role** | **WSG 1.0 Role** | **Plain Language Role** |
+|------------------|-------------------|------------------|-------------------------|
+| **Alerts** | Ensures screen readers can announce urgent alerts immediately. | Minimizes payload so alerts don't fail on congested networks. | Replaces "Evacuate the vicinity" with "Leave the area now." |
 | **Maps** | Requires text-alternatives for GIS data and high-contrast color. | Uses SVG instead of heavy JPGs to save battery and data. | Focuses on clear landmarks rather than complex coordinates. |
 | **Manuals** | Mandates tagged PDFs or (better) accessible HTML. | Encourages "Offline-First" via PWAs (Progressive Web Apps). | Uses "How-To" active voice for medical/prep instructions. |
 
@@ -64,7 +64,7 @@ Simultaneous posting to:
 - **Local community boards** (analog backup)
 
 ### Accessible Contact Methods
-1. **SMS/Text-to-911:** Ensuring the primary emergency contact method is accessible to non-verbal and Deaf users
+1. **SMS/Text-to-911:** Ensuring the primary emergency contact method is accessible to nonspeaking and Deaf users
 2. **Cross-Device Compatibility:** Alerts function across mobile, desktop, and wearable tech (haptics)
 3. **Translation & Plain Language:** Real-time translation capabilities and Grade 6 reading level for all public-facing alerts
 

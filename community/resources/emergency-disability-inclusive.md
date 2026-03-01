@@ -65,7 +65,7 @@ This directory highlights the 2026 gold standards for digital accessibility, low
 ### [TapSOS Emergency App](https://tapsos.com/)
 **Useful For:** Non-verbal emergency reporting (911/999) using a visual, icon-based interface.
 
-**Who it's for:** People who are Deaf, non-verbal, or in high-stress "situational" crises.
+**Who it's for:** People who are Deaf, nonspeaking, or in high-stress "situational" crises.
 
 **Why it matters:** It is a perfect example of high-utility, low-bandwidth data exchange that bypasses the need for voice communication.
 

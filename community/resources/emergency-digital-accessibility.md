@@ -115,7 +115,7 @@ This directory focuses on modern strategies for inclusive emergency management, 
 Based on these resources, an inclusive digital strategy should move beyond a single platform (like X) and include:
 
 1. **Platform Diversity:** Simultaneous posting to **Facebook, Mastodon, Bluesky**, and local community boards.
-2. **SMS/Text-to-911:** Ensuring that the primary emergency contact method is accessible to non-verbal and Deaf users.
+2. **SMS/Text-to-911:** Ensuring that the primary emergency contact method is accessible to nonspeaking and Deaf users.
 3. **Cross-Device Compatibility:** Ensuring alerts function across mobile, desktop, and wearable tech (haptics).
 4. **Translation & Plain Language:** Real-time translation capabilities and Grade 6 reading level for all public-facing alerts.
 

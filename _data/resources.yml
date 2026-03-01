@@ -195,7 +195,7 @@
   org: "TapSOS"
   url: "https://tapsos.com/"
   type: "Emergency Communication App"
-  notes: "Non-verbal emergency reporting (911/999) using visual, icon-based interface for Deaf, non-verbal, or high-stress users."
+  notes: "Nonspeaking emergency reporting (911/999) using visual, icon-based interface for Deaf, nonspeaking, or high-stress users."
 
 - title: "Kiwix: Offline Wikipedia & Educational Content"
   org: "Kiwix"
