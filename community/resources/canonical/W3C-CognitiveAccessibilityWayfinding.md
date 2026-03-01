@@ -95,6 +95,9 @@ Focus wayfinding information at locations where visitors must make choices:
 ### Digital Integration
 - **QR codes:** Link to detailed maps or navigation assistance
 - **Mobile apps:** Indoor navigation with step-by-step directions
+- **NaviLens codes:** High-contrast colorful markers detectable from up to 12 meters away, providing audio navigation information via smartphone app for blind and low-vision users
+- **Bluetooth beacons:** Trigger location-specific audio information on smartphones
+- **NFC tags:** Provide information when tapped with a smartphone
 - **Audio descriptions:** Available via phone or app for route guidance
 - **Video routes:** Pre-recorded walkthrough of accessible routes
 
@@ -154,6 +157,8 @@ Wayfinding systems require ongoing maintenance:
 ### Tools and Technologies
 - Tactile map creation: 3D printing services at public libraries
 - Digital wayfinding platforms: Mapbox, Google Indoor Maps
+- Digital navigation codes: NaviLens (long-range detection for blind users), Microsoft Soundscape (audio-based spatial awareness)
+- Bluetooth beacon systems: For location-triggered information
 - Accessible signage design: Ensure compliance with contrast and size requirements
 - Audio beacon systems: For critical decision points
 

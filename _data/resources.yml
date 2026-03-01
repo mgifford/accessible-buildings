@@ -105,3 +105,15 @@
   url: "https://www.rickhansen.com/become-accessible/accessibility-resources"
   type: "Assessment Tools"
   notes: "Resources for assessing and improving building accessibility, including certification programs and training materials."
+
+- title: "NaviLens"
+  org: "NaviLens"
+  url: "https://www.navilens.com/"
+  type: "Digital Wayfinding Technology"
+  notes: "Digital navigation system using high-contrast colorful codes detectable from up to 12 meters away. Provides audio-based wayfinding and orientation information for blind and low-vision users via smartphone app. Widely deployed in transit systems and public buildings."
+
+- title: "Microsoft Soundscape"
+  org: "Microsoft"
+  url: "https://www.microsoft.com/en-us/research/product/soundscape/"
+  type: "Digital Wayfinding Technology"
+  notes: "Audio-based wayfinding app that uses 3D audio to help blind and low-vision users build awareness of their surroundings and navigate independently."
