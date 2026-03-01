@@ -41,9 +41,49 @@ Detailed accessibility information for the essential services within our buildin
 
 ## 4. Quiet and Sensory Spaces
 
-- **Quiet Space Location:** [Location]
-- **Features:** [e.g., Dimmable lights, acoustic padding, comfortable seating]
-- **Availability:** [Open access/Booking required]
+*Quiet spaces are essential for visitors who need to regulate sensory input or manage sensory overload. For detailed guidance on designing and documenting quiet spaces, see the [Quiet Spaces Framework]({{ "/framework/quiet-spaces/" | relative_url }}).*
+
+### Location and Access
+
+- **Location:** [Floor, zone, and nearest landmark - e.g., "Level 2, near accessible toilets, 50m from main lift"]
+- **Access Route:** [e.g., Step-free from main entrance, follow blue line]
+- **Door Type:** [Automatic/Manual/Power-assisted]
+- **Door Width:** [e.g., 900mm clear width]
+- **Signage:** [e.g., Universal quiet symbol on door and wayfinding signage]
+
+### Interior Features
+
+- **Room Dimensions:** [Width x Depth - e.g., 3m x 3m]
+- **Acoustic Treatment:** [e.g., Acoustic panels on walls and ceiling, carpeted floor]
+- **Ambient Noise Level:** [Very quiet/Quiet/Moderate - describe any background sounds]
+- **Lighting:** [e.g., Dimmable LED lights, controls at 1000mm height, natural light with blackout curtains]
+- **Temperature Control:** [User-controlled/Fixed temperature]
+
+### Seating and Space
+
+- **Seating Types:** [e.g., 2 armchairs with armrests, 1 small sofa, floor cushions available]
+- **Wheelchair Space:** [Yes/No - if yes, dimensions of clear floor space]
+- **Capacity:** [Maximum number of people the space comfortably accommodates]
+
+### Features and Supports
+
+- **Sensory Supports:** [e.g., Weighted blankets available, fidget items, etc.]
+- **Technology:** [Wi-Fi available? Power outlets? Locations and heights]
+- **Emergency Call System:** [Location and type of emergency call button]
+
+### Usage and Policies
+
+- **Availability:** [Open access/Booking required/Time limits if busy]
+- **Permitted Activities:** [e.g., Resting, quiet reading, sensory regulation]
+- **Discouraged Activities:** [e.g., Phone calls, eating strong-smelling foods, group meetings]
+- **Usage Policy Details:** [Link to full policy or include brief version]
+- **Time Limits:** [e.g., "Please limit use to 20 minutes when others are waiting"]
+
+### Maintenance
+
+- **Inspection Schedule:** [Daily/Weekly checks]
+- **How to Report Issues:** [e.g., Contact reception desk, call facility management]
+- **Last Verified:** [Date when information was last confirmed accurate]
 
 ## 6. Emergency Support and Evacuation
 

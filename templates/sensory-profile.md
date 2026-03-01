@@ -31,7 +31,13 @@ This guide helps visitors with sensory processing needs, including autistic peop
 
 ## Supports Available
 
-- **Quiet Space:** [Location, how to access, and features like weighted blankets or dimmable lights]
+- **Quiet Space:** 
+  - **Location:** [Specific location and how to find it]
+  - **Features:** [e.g., Acoustic panels, dimmable lights, comfortable seating options including wheelchair space]
+  - **Accessibility:** [Step-free access? Door type and width?]
+  - **Usage Rules:** [e.g., "Phone-free zone. Please keep conversations to whispers. No eating strong-smelling foods. If others are waiting, please limit use to 20 minutes."]
+  - **Supports Available:** [e.g., Weighted blankets, fidget items, emergency call button]
+  - **Availability:** [Open access/Booking required/Time limits]
 - **Sensory Kits:** [Available from reception? Includes noise-canceling headphones, fidget toys, etc.]
 - **Sensory-Friendly Hours:** [Days and times with reduced noise and lighting]
 - **Social Scripts:** [Link to a social script/story for visiting the building]

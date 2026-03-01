@@ -5,7 +5,7 @@ summary_fields:
   step_free_entrance: "Whether the main entrance is accessible without steps."
   accessible_toilets: "Availability of toilets designed for disabled users."
   accessible_parking: "Availability of designated parking spaces."
-  quiet_space: "Presence of a dedicated sensory-friendly zone."
+  quiet_space: "Presence of a dedicated sensory-friendly zone with acoustic treatment, dim/adjustable lighting, and usage policies to maintain a calm environment."
 
 arrival_fields:
   nearest_transit: "Name and distance of the closest accessible transport hub."
@@ -26,3 +26,7 @@ facilities_fields:
   toilet_transfer: "Side for wheelchair transfer (Left, Right, Both)."
   changing_places: "Presence of a full Changing Places facility."
   seating_armrests: "Availability of seating with armrests for support."
+  quiet_space_location: "Specific location of quiet/sensory space and navigation route."
+  quiet_space_acoustic: "Acoustic treatment present (panels, soft surfaces, acoustic door seal)."
+  quiet_space_lighting: "Lighting type and controls (dimmable, natural light options)."
+  quiet_space_policy: "Usage rules and expectations (permitted and discouraged activities)."
