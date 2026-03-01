@@ -51,6 +51,20 @@ permalink: /templates/maintenance-checklist/
 
 ---
 
+## Quarterly / Annual Review
+
+### [ ] Photo and Visual Content Review
+- Review all photos in access guide for accuracy and currency.
+- Replace photos after renovations, layout changes, or significant updates.
+- Update photos of seating arrangements if configurations have changed.
+- Verify photo alt text is accurate and descriptive.
+- Check that photos show current wayfinding signage and route markers.
+- Document photo updates in the website change log.
+
+See [Photo Guidance](/framework/photo-guidance/) for maintaining visual accessibility content.
+
+---
+
 ## Failure Plan Action
 If any critical feature (lift, power door, toilet) is out of service:
 1. [ ] Place physical signage at the entrance.
