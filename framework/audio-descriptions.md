@@ -166,23 +166,26 @@ Combine audio with other formats:
 
 ## Open-Source Text-to-Speech Libraries
 
-If implementing custom TTS functionality, consider these libraries:
+**Recommended Approach:** Use the Web Speech API (documented above) as your primary implementation. It's browser-native, requires no external dependencies, respects user privacy, and works without additional licensing.
+
+If you need features beyond the Web Speech API, consider these alternatives:
 
 ### ResponsiveVoice.js
 - Simple JavaScript API
 - Multiple voices and languages
 - Free for non-commercial use
 - Commercial license required for business websites
+- Note: Sends content to external servers, raising privacy concerns
 
-### Speech-to-Text Libraries
-Note: Most modern implementations should use the Web Speech API (built into browsers) rather than third-party libraries.
+### Other Libraries
+Most modern implementations should use the Web Speech API (built into browsers) rather than third-party libraries for text-to-speech functionality.
 
 ### Considerations
 - **Licensing:** Verify license permits your use case
 - **Maintenance:** Check if library is actively maintained
 - **Accessibility:** Test with screen readers to avoid conflicts
 - **Performance:** Consider impact on page load time
-- **Privacy:** Understand if content is sent to external services
+- **Privacy:** Understand if content is sent to external services (major concern for visitor information)
 
 ## Testing Your Audio Implementation
 

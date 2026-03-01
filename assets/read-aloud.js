@@ -121,9 +121,26 @@
     currentUtterance.onerror = function(event) {
       console.error('Speech synthesis error:', event);
       resetButton(button);
-      if (event.error === 'not-allowed') {
-        showMessage('Text-to-speech permission was denied. Please check your browser settings.', button);
+      
+      // Provide user-facing error messages for common issues
+      let errorMessage = 'Unable to read text aloud. ';
+      switch(event.error) {
+        case 'not-allowed':
+          errorMessage += 'Text-to-speech permission was denied. Please check your browser settings.';
+          break;
+        case 'network':
+          errorMessage += 'Network connection required for text-to-speech.';
+          break;
+        case 'interrupted':
+          errorMessage += 'Reading was interrupted.';
+          break;
+        case 'audio-busy':
+          errorMessage += 'Audio system is busy. Please try again.';
+          break;
+        default:
+          errorMessage += 'Please try using your browser\'s reading mode instead.';
       }
+      showMessage(errorMessage, button);
     };
 
     window.speechSynthesis.speak(currentUtterance);
@@ -173,8 +190,7 @@
     if (!messageDiv) {
       messageDiv = document.createElement('div');
       messageDiv.className = 'read-aloud-message';
-      messageDiv.setAttribute('role', 'status');
-      messageDiv.setAttribute('aria-live', 'polite');
+      messageDiv.setAttribute('role', 'status'); // role=status implies aria-live=polite
       button.parentNode.insertBefore(messageDiv, button.nextSibling);
     }
     
