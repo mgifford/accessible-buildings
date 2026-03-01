@@ -107,7 +107,12 @@ function readAloud(text) {
     utterance.rate = 0.9; // Slightly slower for clarity
     window.speechSynthesis.speak(utterance);
   } else {
-    alert('Text-to-speech is not supported in your browser. Try Microsoft Edge Reading Mode or Safari Reading Mode.');
+    // Show accessible notification instead of alert
+    const message = document.createElement('div');
+    message.setAttribute('role', 'status');
+    message.setAttribute('aria-live', 'polite');
+    message.textContent = 'Text-to-speech is not supported in your browser. Try Microsoft Edge Reading Mode or Safari Reading Mode.';
+    document.body.appendChild(message);
   }
 }
 ```

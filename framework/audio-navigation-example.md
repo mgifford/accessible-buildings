@@ -7,7 +7,7 @@ permalink: /framework/audio-navigation-example/
 # Audio Navigation Example
 {: .read-aloud-section}
 
-This page demonstrates how to structure route descriptions for text-to-speech accessibility. Try using the **🔊 Read Aloud** button at the top of the page, or enable your browser's reading mode (Edge, Safari, or use a Chrome/Firefox extension).
+This page demonstrates how to structure route descriptions for text-to-speech accessibility. Try using the **🔊 Read Aloud** button or enable your browser's reading mode (Edge, Safari, or use a Chrome/Firefox extension).
 
 ## Route to Accessible Toilets
 {: .read-aloud-section}

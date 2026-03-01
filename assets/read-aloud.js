@@ -100,7 +100,7 @@
   // Start reading text aloud
   function startReading(text, button) {
     if (!text) {
-      alert('No text to read');
+      showMessage('No text to read', button);
       return;
     }
 
@@ -122,7 +122,7 @@
       console.error('Speech synthesis error:', event);
       resetButton(button);
       if (event.error === 'not-allowed') {
-        alert('Text-to-speech permission was denied. Please check your browser settings.');
+        showMessage('Text-to-speech permission was denied. Please check your browser settings.', button);
       }
     };
 
@@ -163,6 +163,28 @@
     button.innerHTML = '🔊 Read Aloud';
     button.setAttribute('aria-label', 'Read this section aloud');
     button.classList.remove('reading');
+  }
+
+  // Show accessible message near button
+  function showMessage(message, button) {
+    // Create or get existing message container
+    let messageDiv = button.parentNode.querySelector('.read-aloud-message');
+    
+    if (!messageDiv) {
+      messageDiv = document.createElement('div');
+      messageDiv.className = 'read-aloud-message';
+      messageDiv.setAttribute('role', 'status');
+      messageDiv.setAttribute('aria-live', 'polite');
+      button.parentNode.insertBefore(messageDiv, button.nextSibling);
+    }
+    
+    messageDiv.textContent = message;
+    messageDiv.style.display = 'block';
+    
+    // Auto-hide after 5 seconds
+    setTimeout(function() {
+      messageDiv.style.display = 'none';
+    }, 5000);
   }
 
   // Stop all speech when page is hidden or unloaded

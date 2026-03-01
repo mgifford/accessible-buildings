@@ -537,3 +537,21 @@ table {
     opacity: 0.85;
   }
 }
+
+.read-aloud-message {
+  display: none;
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-top: 8px;
+  color: #92400e;
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  &[data-theme="dark"] {
+    background: #451a03;
+    border-color: #d97706;
+    color: #fbbf24;
+  }
+}
