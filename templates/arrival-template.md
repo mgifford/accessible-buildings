@@ -28,6 +28,7 @@ This guide provides detailed information on getting to our property boundary and
 - **Drop-off Point:** [Precise location description or GPS coordinates]
 - **Seating at drop-off:** [Yes/No]
 - **Distance to entrance:** [Distance]
+- **Photos:** [Include photos showing the drop-off location, path to entrance, and any slopes or curb cuts. Photos help visitors visualize the route from vehicle to building. All photos must have descriptive alt text. See [Photo Guidance](/framework/photo-guidance/)]
 
 ---
 
@@ -53,3 +54,4 @@ This guide provides detailed information on getting to our property boundary and
 - **Gate/Boundary Entry:** [Width, Type of gate]
 - **Paths:** [Material (e.g. brick, asphalt), Minimum width, Any steep sections]
 - **Lighting:** [Is the path well-lit for evening arrivals?]
+- **Photos:** [Include photos showing the step-free route from parking/drop-off to entrance, path surfaces, any slopes or ramps, and entrance doors. Photos help visitors assess the arrival experience. All photos must have descriptive alt text. See [Photo Guidance](/framework/photo-guidance/)]
