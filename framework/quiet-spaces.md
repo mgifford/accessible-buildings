@@ -152,7 +152,7 @@ Clear usage policies help maintain the space's intended function and prevent con
 
 ### Essential Features
 
-- **Door operation:** Automatic or very light manual door (<22 Newtons / 5 pounds force)
+- **Door operation:** Automatic or very light manual door (maximum 22 Newtons / 5 pounds force)
 - **Space dimensions:** Minimum 1500mm x 1500mm clear floor space
 - **Turning circle:** 1500mm minimum for wheelchair users
 - **Seating:** Multiple options including wheelchair-accessible space
