@@ -33,8 +33,67 @@
             </div>
         </nav>
 
-        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">
-            🌙
-        </button>
+        <div class="personalization-wrapper" id="personalization-wrapper">
+            <button
+                id="personalization-btn"
+                class="personalization-btn"
+                aria-label="Display preferences"
+                aria-expanded="false"
+                aria-controls="personalization-panel"
+            >
+                <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+            </button>
+
+            <div
+                id="personalization-panel"
+                class="personalization-panel"
+                hidden
+            >
+                <h2 class="pref-heading">Display Preferences</h2>
+                <p class="pref-note">These settings are saved locally in your browser. They do not replace your assistive technology.</p>
+
+                <div class="pref-group">
+                    <fieldset class="pref-fieldset">
+                        <legend>Color theme</legend>
+                        <div class="pref-theme-grid">
+                            <button class="pref-theme-btn" data-theme="light" aria-pressed="false">
+                                <span aria-hidden="true">☀️</span> Light
+                            </button>
+                            <button class="pref-theme-btn" data-theme="system" aria-pressed="true">
+                                <span aria-hidden="true">🖥</span> System
+                            </button>
+                            <button class="pref-theme-btn" data-theme="dark" aria-pressed="false">
+                                <span aria-hidden="true">🌙</span> Dark
+                            </button>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="pref-group">
+                    <div id="font-size-label" class="pref-group-label">Text size</div>
+                    <div class="pref-row" role="group" aria-labelledby="font-size-label">
+                        <button class="pref-icon-btn" id="font-decrease" aria-label="Decrease text size">A−</button>
+                        <span class="pref-value" id="font-size-display">Default</span>
+                        <button class="pref-icon-btn" id="font-increase" aria-label="Increase text size">A+</button>
+                    </div>
+                </div>
+
+                <div class="pref-group">
+                    <label class="pref-checkbox-label">
+                        <input type="checkbox" id="reduce-motion-toggle" class="pref-checkbox">
+                        <span>Reduce motion</span>
+                    </label>
+                </div>
+
+                <div class="pref-group">
+                    <button class="pref-reset-btn" id="pref-reset-all">Reset all to defaults</button>
+                </div>
+
+                <div id="pref-announcement" role="status" aria-live="polite" class="sr-only"></div>
+            </div>
+        </div>
     </div>
 </header>
