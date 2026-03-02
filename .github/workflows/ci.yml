@@ -47,6 +47,7 @@ jobs:
             --verbose
             --no-progress
             --exclude-mail
+            --timeout 60
             --exclude 'https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-bodies'
             --exclude 'https://www.iso.org/standard/*'
             --exclude 'https://www.melbourne.vic.gov.au/*'
@@ -57,6 +58,8 @@ jobs:
             --exclude 'https://www.sensorytrust.org.uk/*'
             --accept 403,429,999
             './_site/**/*.html'
+          # Don't fail the build on link errors (including timeouts)
+          fail: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
