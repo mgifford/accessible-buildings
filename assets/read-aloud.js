@@ -15,15 +15,65 @@
     // Remove unwanted elements
     const unwanted = clone.querySelectorAll('script, style, [aria-hidden="true"], .no-read-aloud');
     unwanted.forEach(el => el.remove());
+
+    // Add periods after headings that don't end with sentence-ending punctuation,
+    // so TTS engines pause naturally between the heading and the following body text
+    clone.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(h) {
+      const trimmed = h.textContent.trim();
+      if (trimmed && !/[.!?:;]$/.test(trimmed)) {
+        const lastChild = h.lastChild;
+        if (lastChild && lastChild.nodeType === Node.TEXT_NODE) {
+          lastChild.textContent = lastChild.textContent.replace(/\s*$/, '') + '.';
+        } else if (lastChild) {
+          h.appendChild(document.createTextNode('.'));
+        }
+      }
+    });
+
+    // Insert a full stop after block-level elements that don't already end with
+    // sentence-ending punctuation, preventing run-on speech across paragraphs/list items
+    clone.querySelectorAll('p, li, blockquote, dt, dd, td, th').forEach(function(block) {
+      const trimmed = block.textContent.trim();
+      if (trimmed && !/[.!?:;]$/.test(trimmed)) {
+        const lastChild = block.lastChild;
+        if (lastChild && lastChild.nodeType === Node.TEXT_NODE) {
+          lastChild.textContent = lastChild.textContent.replace(/\s*$/, '') + '.';
+        } else if (lastChild) {
+          block.appendChild(document.createTextNode('.'));
+        }
+      }
+    });
     
     // Get text content
     return clone.textContent.trim().replace(/\s+/g, ' ');
+  }
+
+  // Show a persistent accessible hint when Web Speech API is unavailable,
+  // directing the user to their browser's built-in reading mode instead
+  function showUnsupportedHint() {
+    const container = document.querySelector('.page-content, main, article');
+    if (!container) return;
+
+    const hint = document.createElement('p');
+    hint.className = 'read-aloud-unsupported';
+    hint.setAttribute('role', 'note');
+    hint.appendChild(document.createTextNode('🔊 Read-aloud is not available in this browser. Try '));
+    const edgeStrong = document.createElement('strong');
+    edgeStrong.textContent = 'Microsoft Edge Immersive Reader';
+    hint.appendChild(edgeStrong);
+    hint.appendChild(document.createTextNode(' (press F9 or click the book icon), '));
+    const safariStrong = document.createElement('strong');
+    safariStrong.textContent = 'Safari Reader View';
+    hint.appendChild(safariStrong);
+    hint.appendChild(document.createTextNode(' (View → Show Reader, then Edit → Speech → Start Speaking), or install a Read Aloud browser extension for Chrome or Firefox.'));
+    container.insertAdjacentElement('afterbegin', hint);
   }
 
   // Initialize read-aloud functionality
   function initReadAloud() {
     if (!speechSupported) {
       console.log('Web Speech API not supported in this browser');
+      showUnsupportedHint();
       return;
     }
 
