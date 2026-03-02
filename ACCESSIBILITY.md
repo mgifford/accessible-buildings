@@ -48,17 +48,29 @@ See also: [Accessibility Statement](/about/accessibility-statement/) for our det
 - [`assets/main.scss`](assets/main.scss) lines 268-280 (keyboard-accessible dropdowns)
 - [`_includes/header.html`](_includes/header.html) line 23 (tabindex on group titles)
 
-### 3.3 Dark Mode Support
-- Manual dark/light mode toggle with accessible button
-- Theme toggle button includes proper ARIA labels that update with state
-- System preference detection with `prefers-color-scheme`
-- Theme preference persisted in localStorage
-- All UI components maintain accessible contrast in both modes
+### 3.3 Personalization Panel (Display Preferences)
+- A "Display Preferences" panel replaces the former standalone dark-mode toggle
+- The panel is accessible via a gear-icon button in the header (after the navigation in DOM and tab order)
+- Controls provided:
+  - **Color theme** – Light / System / Dark toggle buttons (`aria-pressed` state)
+  - **Text size** – Decrease / Default / Increase buttons scaling the root font size (87.5 % → 100 % → 112.5 % → 125 %)
+  - **Reduce motion** – Checkbox that disables CSS transitions and animations
+  - **Reset all** – Single button to return all three preferences to defaults
+- All preferences persisted in `localStorage` and restored on page load without visible flash
+- Changes announced to screen readers via an ARIA live region (`role="status"`, `aria-live="polite"`)
+- Panel opens/closes with keyboard (Escape closes, focus returns to trigger button)
+- Panel closes when focus moves outside the wrapper or user clicks elsewhere
+- System preferences (`prefers-color-scheme`, `prefers-reduced-motion`) are respected as defaults
+- This widget does **not** claim to "fix" accessibility – it complements proper accessible design and never interferes with users' own assistive technology
+
+**Implements patterns from:**
+- [User Personalization Accessibility Best Practices](https://github.com/mgifford/ACCESSIBILITY.md/blob/main/examples/USER_PERSONALIZATION_ACCESSIBILITY_BEST_PRACTICES.md)
+- [Light/Dark Mode Accessibility Best Practices](https://github.com/mgifford/ACCESSIBILITY.md/blob/main/examples/LIGHT_DARK_MODE_ACCESSIBILITY_BEST_PRACTICES.md)
 
 **Code References:**
-- [`assets/theme-toggle.js`](assets/theme-toggle.js) (complete implementation)
-- [`assets/main.scss`](assets/main.scss) lines 31-72 (dark mode color variables)
-- [`_includes/header.html`](_includes/header.html) line 34 (theme toggle button)
+- [`assets/personalization.js`](assets/personalization.js) (complete implementation)
+- [`assets/main.scss`](assets/main.scss) (personalization panel styles, reduced-motion overrides)
+- [`_includes/header.html`](_includes/header.html) (panel HTML structure)
 
 ### 3.4 Semantic HTML and ARIA
 - Proper use of semantic HTML5 elements (`<header>`, `<nav>`, `<main>`, `<footer>`)

@@ -441,25 +441,32 @@ table {
 }
 
 // ---------------------------------------------------------
-// THEME TOGGLE BUTTON
+// PERSONALIZATION PANEL
 // ---------------------------------------------------------
 
-.theme-toggle {
+// Trigger button (gear icon)
+.personalization-wrapper {
+  position: relative;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 820px) {
+    order: 3;
+  }
+}
+
+.personalization-btn {
   background: none;
   border: 2px solid var(--border-color);
   color: var(--text-color);
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 8px 10px;
   border-radius: 6px;
-  font-size: 1.2rem;
-  line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
   min-width: 44px;
   min-height: 44px;
-  flex-shrink: 0;
 
   &:hover {
     background: var(--nav-link-bg-hover);
@@ -471,8 +478,240 @@ table {
     outline-offset: 2px;
   }
 
+  svg {
+    display: block;
+    pointer-events: none;
+  }
+}
+
+// Dropdown panel
+.personalization-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 1003;
+  width: 300px;
+  max-width: calc(100vw - 2rem);
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &[hidden] {
+    display: none;
+  }
+
   @media screen and (max-width: 820px) {
-    order: 3;
+    right: -10px;
+  }
+}
+
+// Override minima theme's heading margins inside the panel
+.pref-heading {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.25rem !important;
+  color: var(--text-color) !important;
+}
+
+// Override minima's default paragraph margins inside the panel
+.pref-note {
+  font-size: 0.8rem !important;
+  color: var(--footer-text) !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.pref-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pref-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  legend {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+}
+
+.pref-theme-grid {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.pref-theme-btn {
+  flex: 1;
+  background: var(--nav-link-bg-hover);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 6px;
+  padding: 8px 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: var(--font-family);
+  transition: all 0.15s ease;
+
+  &:hover {
+    background: var(--nav-link-bg-hover);
+    border-color: var(--brand-color);
+    color: var(--brand-color);
+  }
+
+  &:focus {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 2px;
+  }
+
+  &[aria-pressed="true"] {
+    background: var(--brand-color);
+    border-color: var(--brand-color);
+    color: #fff;
+  }
+}
+
+.pref-group-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.pref-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pref-icon-btn {
+  background: var(--nav-link-bg-hover);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 6px;
+  width: 44px;
+  height: 44px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  transition: all 0.15s ease;
+
+  &:hover:not(:disabled) {
+    background: var(--nav-link-bg-hover);
+    border-color: var(--brand-color);
+    color: var(--brand-color);
+  }
+
+  &:focus {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.pref-value {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.pref-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.pref-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  accent-color: var(--brand-color);
+
+  &:focus {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 2px;
+  }
+}
+
+.pref-reset-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--footer-text);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  font-family: var(--font-family);
+  min-height: 44px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.15s ease;
+
+  &:hover {
+    border-color: var(--brand-color);
+    color: var(--brand-color);
+  }
+
+  &:focus {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 2px;
+  }
+}
+
+// ---------------------------------------------------------
+// REDUCED-MOTION USER OVERRIDE
+// ---------------------------------------------------------
+// Respects both system preference and the user's manual toggle.
+// Using 0.01ms rather than 0s intentionally: setting durations to exactly 0
+// can break JS animation-end event listeners. The near-zero value eliminates
+// perceived motion while keeping transitionend/animationend events firing.
+// The !important overrides are necessary to suppress third-party library styles.
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root[data-reduced-motion="true"] {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
