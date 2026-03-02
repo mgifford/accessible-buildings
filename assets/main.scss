@@ -2,6 +2,19 @@
 ---
 @import "minima";
 
+// Visually hidden but accessible to screen readers
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 // Modern Typography & Text Scaling Support
 // Based on https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');

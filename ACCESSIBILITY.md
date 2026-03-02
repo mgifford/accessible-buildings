@@ -16,7 +16,7 @@ See also: [Accessibility Statement](/about/accessibility-statement/) for our det
 | :--- | :--- |
 | **Target Standard** | WCAG 2.2 Level AA |
 | **Testing Method** | Automated (pa11y-ci with axe-core) + Manual review |
-| **CI/CD Enforcement** | Link checking, spelling, Jekyll build validation |
+| **CI/CD Enforcement** | Link checking, spelling, Jekyll build validation, pa11y-ci accessibility scan |
 | **Last Full Audit** | February 2026 |
 
 ### What We Test
@@ -24,6 +24,7 @@ See also: [Accessibility Statement](/about/accessibility-statement/) for our det
 - **Automated Testing:** We run automated checks on the built site using industry-standard tools (axe-core engine)
 - **Manual Testing:** Periodic keyboard-only navigation and screen reader testing
 - **Link Integrity:** Automated link checking on every PR via lychee-action
+- **Accessibility Testing:** pa11y-ci with axe + htmlcs engines runs against key pages on every PR and weekly
 - **Build Validation:** Jekyll builds must succeed before merge
 
 ## 3. Accessibility Features Implemented
@@ -149,8 +150,9 @@ Our CI pipeline includes several accessibility-related checks:
 - **Jekyll Build:** Ensures site builds without errors
 - **Link Checking:** Validates all internal and external links (lychee-action)
 - **Spelling:** Prevents typos that could cause confusion (codespell)
+- **Accessibility:** pa11y-ci with axe and htmlcs engines scans key pages against WCAG2AA on every PR and weekly
 
-**See:** [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
+**See:** [`.github/workflows/ci.yml`](.github/workflows/ci.yml) and [`.github/workflows/accessibility.yml`](.github/workflows/accessibility.yml)
 
 ### Local Testing Tools
 We recommend these tools for contributors:

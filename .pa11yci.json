@@ -1,0 +1,21 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "runners": ["axe", "htmlcs"],
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+    },
+    "timeout": 30000,
+    "wait": 500
+  },
+  "urls": [
+    "http://localhost:4000/accessible-buildings/",
+    "http://localhost:4000/accessible-buildings/about/",
+    "http://localhost:4000/accessible-buildings/about/accessibility-statement/",
+    "http://localhost:4000/accessible-buildings/framework/access-chain/",
+    "http://localhost:4000/accessible-buildings/framework/building-layout/",
+    "http://localhost:4000/accessible-buildings/templates/",
+    "http://localhost:4000/accessible-buildings/community/examples/",
+    "http://localhost:4000/accessible-buildings/publishing/governance/"
+  ]
+}
