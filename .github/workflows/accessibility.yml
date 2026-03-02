@@ -1,0 +1,78 @@
+name: Accessibility Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Run weekly on Mondays at 07:00 UTC
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pa11y:
+    name: pa11y-ci (axe + htmlcs)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install pa11y-ci and dependencies
+        run: npm install -g pa11y-ci http-server
+
+      - name: Start local server
+        run: |
+          http-server _site -p 4000 > /tmp/pa11y-server.log 2>&1 &
+          echo $! > /tmp/pa11y-server.pid
+
+      - name: Wait for server to be ready
+        run: |
+          for i in {1..20}; do
+            if curl -fsS http://localhost:4000/accessible-buildings/ > /dev/null 2>&1; then
+              echo "Server ready"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Server failed to start" >&2
+          cat /tmp/pa11y-server.log >&2
+          exit 1
+
+      - name: Run pa11y-ci
+        run: pa11y-ci --config .pa11yci.json
+
+      - name: Stop server
+        if: always()
+        run: |
+          if [ -f /tmp/pa11y-server.pid ]; then
+            PID="$(cat /tmp/pa11y-server.pid)"
+            if kill -0 "$PID" 2>/dev/null; then
+              kill "$PID"
+            fi
+          fi
+
+      - name: Upload server log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pa11y-server-log
+          path: /tmp/pa11y-server.log

@@ -16,6 +16,7 @@ exclude:
   - .jekyll-cache/
   - .jekyll-metadata
   - .pa11yci
+  - .pa11yci.json
   - AGENTS.md
 plugins:
   - jekyll-feed
