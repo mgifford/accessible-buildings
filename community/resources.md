@@ -100,3 +100,12 @@ For comprehensive guidance on inclusive emergency management, we maintain specia
 Learn from real-world examples of comprehensive accessibility documentation:
 
 - **[Sesame Place Philadelphia Best Practices]({{ "/community/resources/sesame-place-best-practices/" | relative_url }}):** Analysis of attraction-level accessibility documentation and sensory guide frameworks from a theme park environment, with lessons applicable to museums, theaters, and other multi-experience venues.
+
+---
+
+## Museums and Cultural Venues
+
+Museums have pioneered many repeatable accessibility solutions—tactile maps, mobile web audio tours, verbal description training, and sensory-friendly programming—that transfer directly to other building types.
+
+- **[Museums and Cultural Venues]({{ "/framework/museums/" | relative_url }}):** Framework page covering key innovations including tactile maps, QR codes, mobile web tours, audio descriptions, sensory profiles, and programmatic access. Includes an implementation checklist and transferable lessons for non-museum buildings.
+- **[Smithsonian Institution Example]({{ "/examples/smithsonian-institution/" | relative_url }}):** Evaluation of one of the most comprehensive museum accessibility programmes, with lessons for multi-site cultural organisations.
