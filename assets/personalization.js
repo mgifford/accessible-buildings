@@ -4,7 +4,7 @@
  * Provides visitor-controlled display preferences:
  *   - Color theme: Light / System / Dark
  *   - Text size:   Smaller / Default / Large / Larger
- *   - Reduce motion: toggle
+ *   - Font family: Default / Arial / Times / Comic Sans / Dyslexie
  *
  * Preferences are persisted in localStorage and announced to screen readers.
  * This widget does NOT claim to "fix" accessibility – it complements proper
@@ -21,7 +21,7 @@
   var KEYS = {
     theme: 'theme',
     fontSize: 'preferredFontSize',
-    reducedMotion: 'preferredReducedMotion'
+    fontFamily: 'preferredFontFamily'
   };
 
   function getPref(key) {
@@ -146,43 +146,44 @@
     applyFontSize(currentFontLevel());
   }
 
-  // ── Reduced-motion management ────────────────────────────────────────────────
-  var reducedMQ = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+  // ── Font-family management ───────────────────────────────────────────────────
+  var FONT_FAMILIES = {
+    'default':    { stack: null,                                                         label: 'Default'             },
+    'arial':      { stack: "'Arial', Helvetica, sans-serif",                             label: 'Arial'               },
+    'times':      { stack: "'Times New Roman', Times, Georgia, serif",                   label: 'Times'               },
+    'comic-sans': { stack: "'Comic Sans MS', 'Comic Sans', cursive",                     label: 'Comic Sans'          },
+    'dyslexie':   { stack: "Dyslexie, OpenDyslexic, sans-serif",                          label: 'Dyslexie / OpenDyslexic' }
+  };
 
-  function applyReducedMotionCss(enabled) {
-    if (enabled) {
-      document.documentElement.setAttribute('data-reduced-motion', 'true');
+  function applyFontFamilyCss(key) {
+    var entry = FONT_FAMILIES[key] || FONT_FAMILIES['default'];
+    if (entry.stack) {
+      document.documentElement.style.setProperty('--font-family', entry.stack);
     } else {
-      document.documentElement.removeAttribute('data-reduced-motion');
+      document.documentElement.style.removeProperty('--font-family');
     }
   }
 
-  function updateReducedMotionUI(enabled) {
-    var toggle = document.getElementById('reduce-motion-toggle');
-    if (toggle) { toggle.checked = enabled; }
+  function updateFontFamilyUI(key) {
+    var sel = document.getElementById('font-family-select');
+    if (sel) { sel.value = FONT_FAMILIES[key] ? key : 'default'; }
   }
 
-  function applyReducedMotion(enabled) {
-    applyReducedMotionCss(enabled);
-    updateReducedMotionUI(enabled);
+  function applyFontFamily(key) {
+    applyFontFamilyCss(key);
+    updateFontFamilyUI(key);
   }
 
-  function setReducedMotion(enabled) {
-    setPref(KEYS.reducedMotion, enabled ? 'true' : 'false');
-    applyReducedMotion(enabled);
-    announce(enabled ? 'Reduced motion enabled' : 'Reduced motion disabled');
+  function setFontFamily(key) {
+    setPref(KEYS.fontFamily, key);
+    applyFontFamily(key);
+    var entry = FONT_FAMILIES[key] || FONT_FAMILIES['default'];
+    announce('Font changed to ' + entry.label);
   }
 
-  function initReducedMotion() {
-    var stored = getPref(KEYS.reducedMotion);
-    var enabled;
-    if (stored !== null) {
-      enabled = stored === 'true';
-    } else {
-      // Default to the OS preference
-      enabled = !!(reducedMQ && reducedMQ.matches);
-    }
-    applyReducedMotion(enabled);
+  function initFontFamily() {
+    var stored = getPref(KEYS.fontFamily) || 'default';
+    applyFontFamily(stored);
   }
 
   // ── Panel open / close ───────────────────────────────────────────────────────
@@ -199,7 +200,7 @@
     trigger.setAttribute('aria-expanded', 'true');
     panelOpen = true;
     // Move focus to the first interactive element inside the panel
-    var first = panel.querySelector('button:not([disabled]), input');
+    var first = panel.querySelector('button:not([disabled]), input, select');
     if (first) { first.focus(); }
   }
 
@@ -221,10 +222,10 @@
   function resetAll() {
     removePref(KEYS.theme);
     removePref(KEYS.fontSize);
-    removePref(KEYS.reducedMotion);
+    removePref(KEYS.fontFamily);
     initTheme();
     initFontSize();
-    initReducedMotion();
+    initFontFamily();
     announce('All display preferences reset to defaults');
   }
 
@@ -272,11 +273,11 @@
     if (dec) { dec.addEventListener('click', function () { changeFontSize(-1); }); }
     if (inc) { inc.addEventListener('click', function () { changeFontSize(+1); }); }
 
-    // Reduced-motion toggle
-    var motionToggle = document.getElementById('reduce-motion-toggle');
-    if (motionToggle) {
-      motionToggle.addEventListener('change', function () {
-        setReducedMotion(this.checked);
+    // Font-family selector
+    var fontSel = document.getElementById('font-family-select');
+    if (fontSel) {
+      fontSel.addEventListener('change', function () {
+        setFontFamily(this.value);
       });
     }
 
@@ -289,22 +290,17 @@
   // Apply CSS preferences immediately (before DOM ready) to avoid visible flash
   initTheme();
   applyFontSizeCss(currentFontLevel());
-  applyReducedMotionCss(
-    (function () {
-      var s = getPref(KEYS.reducedMotion);
-      return s !== null ? s === 'true' : !!(reducedMQ && reducedMQ.matches);
-    }())
-  );
+  applyFontFamilyCss(getPref(KEYS.fontFamily) || 'default');
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       initFontSize();
-      initReducedMotion();
+      initFontFamily();
       setupEvents();
     });
   } else {
     initFontSize();
-    initReducedMotion();
+    initFontFamily();
     setupEvents();
   }
 }());
