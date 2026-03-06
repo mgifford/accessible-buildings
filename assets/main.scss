@@ -39,6 +39,9 @@
   --table-bg-even: #f9f9f9; // Light background for even table rows
   --table-header-bg: #f5f5ff; // Light background for table headers
   --table-border: #e8e8e8; // Light border for tables
+  --experimental-notice-bg: #fff3cd;
+  --experimental-notice-border: #b8860b;
+  --experimental-notice-text: #594300;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,6 +63,9 @@
     --table-bg-even: #252525; // Dark background for even table rows
     --table-header-bg: #2a2a2a; // Dark background for table headers
     --table-border: #444; // Dark border for tables
+    --experimental-notice-bg: #3a2e00;
+    --experimental-notice-border: #c9a227;
+    --experimental-notice-text: #f5d87a;
   }
 }
 
@@ -82,6 +88,9 @@
   --table-bg-even: #252525;
   --table-header-bg: #2a2a2a;
   --table-border: #444;
+  --experimental-notice-bg: #3a2e00;
+  --experimental-notice-border: #c9a227;
+  --experimental-notice-text: #f5d87a;
 }
 
 * {
@@ -337,6 +346,16 @@ a {
     &:hover, &:focus {
       text-decoration-thickness: 2px !important;
     }
+  }
+
+  .footer-experimental-notice {
+    background-color: var(--experimental-notice-bg);
+    border: 2px solid var(--experimental-notice-border);
+    border-radius: 4px;
+    color: var(--experimental-notice-text) !important;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
   }
 }
 

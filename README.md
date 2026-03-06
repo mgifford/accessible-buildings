@@ -1,5 +1,11 @@
 # Building Access Guide
 
+> ⚠️ **Experimental — Not Yet Validated**
+>
+> This toolkit is in early, experimental development. Most content was generated with AI assistance and **has not yet been validated against real buildings or real-world use**. Do not treat anything here as authoritative guidance until it has been reviewed and confirmed by disabled people, accessibility practitioners, and building operators.
+>
+> **Your feedback is essential.** If you try this toolkit — whether the results are positive or negative — please [open an issue](https://github.com/mgifford/accessible-buildings/issues) to share what you found. Include links and references so claims can be discussed and improved.
+
 A practical framework for publishing structured, transparent physical accessibility information for buildings.
 
 ## Purpose
