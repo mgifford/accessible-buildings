@@ -1,0 +1,55 @@
+name: Axe Accessibility Scan (GitHub Pages)
+
+# Scans the live GitHub Pages deployment using github/accessibility-scanner (axe-core).
+# Runs after every push to main and on a monthly schedule.
+#
+# SETUP REQUIRED: This workflow needs a fine-grained Personal Access Token (PAT)
+# stored as a repository secret named GH_TOKEN, with the following permissions:
+#   - actions: write
+#   - contents: write
+#   - issues: write
+#   - pull-requests: write
+#   - metadata: read
+#
+# See: https://github.com/github/accessibility-scanner#2-create-a-token-and-add-a-secret
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Run on the first of every month at 08:00 UTC
+    - cron: '0 8 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  axe-scan:
+    name: Scan GitHub Pages with axe-core
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Wait for GitHub Pages deployment
+        if: github.event_name == 'push'
+        run: |
+          echo "Waiting 60 seconds for GitHub Pages to deploy..."
+          sleep 60
+
+      - name: Run accessibility scanner
+        uses: github/accessibility-scanner@v2
+        with:
+          urls: |
+            https://mgifford.github.io/accessible-buildings/
+            https://mgifford.github.io/accessible-buildings/about/
+            https://mgifford.github.io/accessible-buildings/about/accessibility-statement/
+            https://mgifford.github.io/accessible-buildings/framework/access-chain/
+            https://mgifford.github.io/accessible-buildings/framework/building-layout/
+            https://mgifford.github.io/accessible-buildings/templates/
+            https://mgifford.github.io/accessible-buildings/community/examples/
+            https://mgifford.github.io/accessible-buildings/publishing/governance/
+          repository: mgifford/accessible-buildings
+          token: ${{ secrets.GH_TOKEN }}
+          cache_key: mgifford-accessible-buildings
+          skip_copilot_assignment: false

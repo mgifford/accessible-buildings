@@ -15,16 +15,16 @@ See also: [Accessibility Statement](/about/accessibility-statement/) for our det
 | Metric | Status / Value |
 | :--- | :--- |
 | **Target Standard** | WCAG 2.2 Level AA |
-| **Testing Method** | Automated (pa11y-ci with axe-core) + Manual review |
-| **CI/CD Enforcement** | Link checking, spelling, Jekyll build validation, pa11y-ci accessibility scan |
+| **Testing Method** | Automated (pa11y-ci with axe-core, github/accessibility-scanner) + Manual review |
+| **CI/CD Enforcement** | Link checking, spelling, Jekyll build validation, pa11y-ci accessibility scan, axe-core GitHub Pages scan |
 | **Last Full Audit** | February 2026 |
 
 ### What We Test
 
-- **Automated Testing:** We run automated checks on the built site using industry-standard tools (axe-core engine)
+- **Automated Testing (local build):** We run automated checks on the built site using industry-standard tools (axe-core engine via pa11y-ci, every PR and weekly)
+- **Automated Testing (live site):** `github/accessibility-scanner` scans the live GitHub Pages site with axe-core on every push to `main` and monthly, filing any new violations as GitHub Issues
 - **Manual Testing:** Periodic keyboard-only navigation and screen reader testing
 - **Link Integrity:** Automated link checking on every PR via lychee-action
-- **Accessibility Testing:** pa11y-ci with axe + htmlcs engines runs against key pages on every PR and weekly
 - **Build Validation:** Jekyll builds must succeed before merge
 
 ## 3. Accessibility Features Implemented
@@ -162,9 +162,12 @@ Our CI pipeline includes several accessibility-related checks:
 - **Jekyll Build:** Ensures site builds without errors
 - **Link Checking:** Validates all internal and external links (lychee-action)
 - **Spelling:** Prevents typos that could cause confusion (codespell)
-- **Accessibility:** pa11y-ci with axe and htmlcs engines scans key pages against WCAG2AA on every PR and weekly
+- **Accessibility (local build):** pa11y-ci with axe and htmlcs engines scans key pages against WCAG2AA on every PR and weekly
+- **Accessibility (GitHub Pages):** `github/accessibility-scanner` (axe-core) scans the live GitHub Pages site on every push to `main` and on a monthly schedule; violations are filed as GitHub Issues and can be assigned to GitHub Copilot for AI-powered fix suggestions
 
-**See:** [`.github/workflows/ci.yml`](.github/workflows/ci.yml) and [`.github/workflows/accessibility.yml`](.github/workflows/accessibility.yml)
+**See:** [`.github/workflows/ci.yml`](.github/workflows/ci.yml), [`.github/workflows/accessibility.yml`](.github/workflows/accessibility.yml), and [`.github/workflows/axe-github-pages.yml`](.github/workflows/axe-github-pages.yml)
+
+> **Note:** The `axe-github-pages` workflow requires a fine-grained Personal Access Token (PAT) stored as a repository secret named `GH_TOKEN`. See the [accessibility-scanner setup guide](https://github.com/github/accessibility-scanner#2-create-a-token-and-add-a-secret) for required permissions.
 
 ### Local Testing Tools
 We recommend these tools for contributors:
