@@ -3,15 +3,8 @@ name: Axe Accessibility Scan (GitHub Pages)
 # Scans the live GitHub Pages deployment using github/accessibility-scanner (axe-core).
 # Runs after every push to main and on a monthly schedule.
 #
-# SETUP REQUIRED: This workflow needs a fine-grained Personal Access Token (PAT)
-# stored as a repository secret named GH_TOKEN, with the following permissions:
-#   - actions: write
-#   - contents: write
-#   - issues: write
-#   - pull-requests: write
-#   - metadata: read
-#
-# See: https://github.com/github/accessibility-scanner#2-create-a-token-and-add-a-secret
+# Uses the built-in GITHUB_TOKEN (github.token) with issues: write permission
+# to report accessibility violations as GitHub issues.
 
 on:
   push:
@@ -50,6 +43,6 @@ jobs:
             https://mgifford.github.io/accessible-buildings/community/examples/
             https://mgifford.github.io/accessible-buildings/publishing/governance/
           repository: mgifford/accessible-buildings
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ github.token }}
           cache_key: mgifford-accessible-buildings
           skip_copilot_assignment: false
