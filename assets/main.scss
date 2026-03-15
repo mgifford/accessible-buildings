@@ -114,6 +114,19 @@ a {
   }
 }
 
+// Underline links in body content to satisfy WCAG 1.4.1 (link-in-text-block)
+// This ensures links are distinguishable without relying on color alone.
+.post-content, .page-content {
+  a:not(.button):not([class*="btn"]) {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover, &:focus {
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+
 // ---------------------------------------------------------
 // REFACTORED NAVIGATION (STRETCHED & TIGHTENED)
 // ---------------------------------------------------------
