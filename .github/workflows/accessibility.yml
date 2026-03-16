@@ -41,7 +41,9 @@ jobs:
 
       - name: Start local server
         run: |
-          http-server _site -p 4000 > /tmp/pa11y-server.log 2>&1 &
+          mkdir -p /tmp/webroot/accessible-buildings
+          cp -r _site/. /tmp/webroot/accessible-buildings/
+          http-server /tmp/webroot -p 4000 > /tmp/pa11y-server.log 2>&1 &
           echo $! > /tmp/pa11y-server.pid
 
       - name: Wait for server to be ready
