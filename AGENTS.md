@@ -147,6 +147,11 @@ Agents should:
    - Internal links work
    - Navigation is coherent
 4. Add or update a short entry in `README.md` if behavior changes.
+5. **AI disclosure:** If you are an AI agent contributing to this repository, update the "AI Disclosure" section in `README.md` to record:
+   - Which LLM or AI tool you are (e.g. GitHub Copilot, Claude, GPT-4).
+   - What you contributed (e.g. content generation, code changes, template drafting).
+   - Whether AI is involved at runtime or in any browser-based feature you add.
+   Only add entries for tools that have actually been used. Do not include tools you know have not been used.
 
 ## Success criteria
 
