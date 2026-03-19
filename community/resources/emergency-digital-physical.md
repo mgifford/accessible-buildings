@@ -73,8 +73,8 @@ This directory highlights tools and organizations bridging the gap between digit
 
 **Why it matters:** Allows a single laptop or Raspberry Pi to serve as a "Digital Library" for a whole shelter when the internet is gone.
 
-### [Internet Archive: Digital Emergency Library](https://archive.org/details/emergency_medicine)
-**Useful For:** A curated collection of manuals and guides specifically for survival and emergency medicine.
+### [Internet Archive: Emergency and Medical Manuals](https://archive.org/search?query=emergency+medicine+manual)
+**Useful For:** Search interface for manuals and guides on survival and emergency medicine. The previous specific collection URL is no longer active; this search surfaces equivalent open-access content.
 
 **Who it's for:** Public safety officers and researchers.
 

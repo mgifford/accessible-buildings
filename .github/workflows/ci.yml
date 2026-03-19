@@ -56,7 +56,14 @@ jobs:
             --exclude 'https://www.instructables.com/*'
             --exclude 'https://mgifford.github.io/accessible-buildings/*'
             --exclude 'https://www.sensorytrust.org.uk/*'
-            --accept 403,429,999
+            # The following museum and government domains are excluded because their servers
+            # return 404 or time out for CI bot traffic even when the pages exist.
+            # Verify these links manually on each quarterly content review.
+            --exclude 'https://www.sciencemuseumgroup.org.uk/.*'
+            --exclude 'https://www.vam.ac.uk/.*'
+            --exclude 'https://www.nhm.ac.uk/.*'
+            --exclude 'https://www.getprepared.gc.ca/.*'
+            --accept 403,429,503,999
             './_site/**/*.html'
           # Don't fail the build on link errors (including timeouts)
           fail: false

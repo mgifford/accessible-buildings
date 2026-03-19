@@ -236,11 +236,11 @@ The following extends the [Building Access Guide Template](/templates/building-a
 The following organisations have published accessible exhibits, mobile web tours, or accessibility guides worth reviewing:
 
 - **[Smithsonian Institution Accessibility](https://www.si.edu/visit/accessibility)** — One of the most comprehensive museum accessibility programmes in the world, including audio tours, ASL resources, and tactile experiences.
-- **[Victoria and Albert Museum (V&A) Access](https://www.vam.ac.uk/info/accessibility)** — Detailed access information including handling collections, touch tours, and BSL-interpreted events.
-- **[Natural History Museum London Accessibility](https://www.nhm.ac.uk/visit/accessibility.html)** — Visitor-facing access information for a major heritage building.
+- **[Victoria and Albert Museum (V&A) Access](https://www.vam.ac.uk/visit/accessibility)** — Detailed access information including handling collections, touch tours, and BSL-interpreted events.
+- **[Natural History Museum London Accessibility](https://www.nhm.ac.uk/visit/accessibility/)** — Visitor-facing access information for a major heritage building.
 - **[Museum of Modern Art (MoMA) Accessibility](https://www.moma.org/visit/accessibility/)** — Audio descriptions, verbal description tours, and multi-language access programmes.
 - **[Te Papa Tongarewa (Museum of New Zealand) Accessibility](https://www.tepapa.govt.nz/visit/plan-your-visit/accessibility)** — A strong Pacific and indigenous cultural institution example.
-- **[Science Museum Group Accessibility](https://www.sciencemuseumgroup.org.uk/about-us/access/)** — Guidance across multiple UK sites with sensory, mobility, and programmatic access information.
+- **[Science Museum Group Accessibility](https://www.sciencemuseumgroup.org.uk/visiting/access/)** — Guidance across multiple UK sites with sensory, mobility, and programmatic access information.
 
 ---
 
