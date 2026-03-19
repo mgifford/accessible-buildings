@@ -33,6 +33,22 @@ We welcome contributions of new templates, examples, and improvements to the fra
 
 **Digital Accessibility:** This toolkit website follows WCAG 2.2 AA standards. See [ACCESSIBILITY.md](/ACCESSIBILITY.md) for our digital accessibility commitment and contributor requirements.
 
+## AI Disclosure
+
+This project values transparency about the use of AI in its development. The table below records which AI tools have contributed and in what capacity.
+
+| AI Tool | Provider | Used for | Used at runtime | Browser-based AI |
+|---|---|---|---|---|
+| GitHub Copilot (Coding Agent) | GitHub / OpenAI | Generating and editing content, templates, framework pages, CSS, JavaScript, and CI configuration throughout the project | No | No |
+| Claude (Sonnet / Opus) | Anthropic | Generating and editing content, templates, framework pages, and code as a coding agent | No | No |
+
+**Notes:**
+
+- **Runtime AI:** No LLM or AI model is invoked when the site is served or visited. The site is a static Jekyll build hosted on GitHub Pages.
+- **Browser-based AI:** The read-aloud feature uses the browser's built-in [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) (a native browser capability, not an external AI model). No browser-based LLM is enabled by this toolkit.
+- **Content provenance:** Most initial content was generated with AI assistance and has not yet been fully validated against real buildings. See the experimental warning at the top of this file.
+- AI agents contributing to this repository are required by [AGENTS.md](AGENTS.md) to update this table when they add or change features.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
