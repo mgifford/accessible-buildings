@@ -84,5 +84,6 @@ For detailed guidance on wayfinding for people with cognitive disabilities, see 
 
 ---
 
-> [!TIP]
-> **Sensory Mapping:** Consider adding a "Quiet/Busy" overlay to your map to help neurodivergent visitors identify areas with high sensory input.
+<aside class="callout callout-tip" role="note">
+  <p><strong>Tip – Sensory Mapping:</strong> Consider adding a "Quiet/Busy" overlay to your map to help neurodivergent visitors identify areas with high sensory input.</p>
+</aside>

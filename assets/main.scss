@@ -403,17 +403,44 @@ a {
 // ---------------------------------------------------------
 // BLOCKQUOTE CONTRAST FIX
 // ---------------------------------------------------------
-// Override minima theme's blockquote text color (#828282) which fails
-// WCAG 2.2 AA contrast (3.84:1 on white). Use var(--text-color) for both
-// light and dark modes to ensure ≥ 4.5:1 contrast ratio.
+// Override minima theme's blockquote styles:
+// - color: #828282 fails WCAG 2.1 AA (only 3.84:1 on white; requires 4.5:1)
+// - font-style: italic is inappropriate for operational callout content
+// Uses var(--text-color) (#111111 light / #e0e0e0 dark) for ≥ 4.5:1 contrast.
 
 blockquote {
   color: var(--text-color) !important;
   border-left-color: var(--brand-color) !important;
+  font-style: normal !important;
+
+  p, li, span, strong, em {
+    color: var(--text-color) !important;
+  }
+}
+
+// ---------------------------------------------------------
+// CALLOUT BLOCKS
+// ---------------------------------------------------------
+// Semantic HTML callouts (<aside class="callout callout-tip">) used in
+// place of GFM > [!TIP] alert syntax, which Kramdown renders as plain
+// blockquotes with literal [!TIP] text.
+
+.callout {
+  border-left: 4px solid var(--brand-color);
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
 
   p {
     color: var(--text-color) !important;
+    margin: 0;
   }
+}
+
+.callout-tip {
+  // rgba(24, 88, 168, 0.06) blended on white ≈ #f1f5fa; #111111 on #f1f5fa = 14.5:1 ✓
+  background-color: rgba(24, 88, 168, 0.06);
+  border-left-color: var(--brand-color);
 }
 
 // ---------------------------------------------------------
