@@ -434,6 +434,10 @@ blockquote {
   p {
     color: var(--text-color) !important;
     margin: 0;
+
+    & + p {
+      margin-top: 0.5rem;
+    }
   }
 }
 
@@ -441,6 +445,12 @@ blockquote {
   // rgba(24, 88, 168, 0.06) blended on white ≈ #f1f5fa; #111111 on #f1f5fa = 14.5:1 ✓
   background-color: rgba(24, 88, 168, 0.06);
   border-left-color: var(--brand-color);
+}
+
+.callout-important {
+  // rgba(176, 111, 0, 0.08) blended on white ≈ #fff8ed; #111111 on #fff8ed = 18.3:1 ✓
+  background-color: rgba(176, 111, 0, 0.08);
+  border-left-color: #8a5700; // decorative border only; text uses var(--text-color)
 }
 
 // ---------------------------------------------------------
