@@ -5,6 +5,10 @@ name: Axe Accessibility Scan (GitHub Pages)
 #
 # Uses the built-in GITHUB_TOKEN (github.token) with issues: write permission
 # to report accessibility violations as GitHub issues.
+#
+# NOTE: cache_key is intentionally omitted. When set, the action tries to push
+# scan results to a gh-cache branch, which fails with a 403 error because
+# github-actions[bot] is denied push access to this repository.
 
 on:
   push:
@@ -15,7 +19,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   issues: write
 
 jobs:
@@ -44,5 +48,3 @@ jobs:
             https://mgifford.github.io/accessible-buildings/publishing/governance/
           repository: mgifford/accessible-buildings
           token: ${{ github.token }}
-          cache_key: mgifford-accessible-buildings
-          skip_copilot_assignment: false
