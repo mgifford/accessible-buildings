@@ -401,6 +401,22 @@ a {
 }
 
 // ---------------------------------------------------------
+// BLOCKQUOTE CONTRAST FIX
+// ---------------------------------------------------------
+// Override minima theme's blockquote text color (#828282) which fails
+// WCAG 2.2 AA contrast (3.84:1 on white). Use var(--text-color) for both
+// light and dark modes to ensure ≥ 4.5:1 contrast ratio.
+
+blockquote {
+  color: var(--text-color) !important;
+  border-left-color: var(--brand-color) !important;
+
+  p {
+    color: var(--text-color) !important;
+  }
+}
+
+// ---------------------------------------------------------
 // CODE BLOCK DARK MODE FIX
 // ---------------------------------------------------------
 // Override minima theme's pre/code styles to support dark mode
