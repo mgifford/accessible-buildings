@@ -10,10 +10,10 @@ The Building Access Guide exists to help organizations communicate high-quality,
 
 ## Communication vs. Construction
 
-> [!IMPORTANT]
-> This is a **communication framework**. It helps you describe what already exists. It is **not** a guide on how to build or renovate an accessible building.
->
-> For instructions on physical construction, accessibility standards, or building codes, you should refer to your local regulations (such as the [ADA in the US](https://www.ada.gov), [British Standards/Part M in the UK](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps), or the [AODA in Ontario](https://www.ontario.ca/page/accessibility-laws)) and accessibility consultants.
+<aside class="callout callout-important" role="note" aria-label="Important notice">
+  <p><strong>Important:</strong> This is a <strong>communication framework</strong>. It helps you describe what already exists. It is <strong>not</strong> a guide on how to build or renovate an accessible building.</p>
+  <p>For instructions on physical construction, accessibility standards, or building codes, you should refer to your local regulations (such as the <a href="https://www.ada.gov">ADA in the US</a>, <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">British Standards/Part M in the UK</a>, or the <a href="https://www.ontario.ca/page/accessibility-laws">AODA in Ontario</a>) and accessibility consultants.</p>
+</aside>
 
 ## Our Approach
 This framework is built on the concept of the **Access Chain**. Access is not a single feature (like a ramp); it is a sequence of events. If any link in the chain fails—from planning the trip to entering the building and using the facilities—the whole visit may fail.
