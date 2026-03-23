@@ -43,6 +43,9 @@ jobs:
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           # Check the built site, not source files with Liquid templates
+          # Museum and government domains (sciencemuseumgroup, vam, nhm, getprepared.gc.ca)
+          # return 404 or time out for CI bot traffic even when the pages exist.
+          # Verify these links manually on each quarterly content review.
           args: >
             --verbose
             --no-progress
@@ -56,9 +59,6 @@ jobs:
             --exclude 'https://www.instructables.com/*'
             --exclude 'https://mgifford.github.io/accessible-buildings/*'
             --exclude 'https://www.sensorytrust.org.uk/*'
-            # The following museum and government domains are excluded because their servers
-            # return 404 or time out for CI bot traffic even when the pages exist.
-            # Verify these links manually on each quarterly content review.
             --exclude 'https://www.sciencemuseumgroup.org.uk/.*'
             --exclude 'https://www.vam.ac.uk/.*'
             --exclude 'https://www.nhm.ac.uk/.*'
