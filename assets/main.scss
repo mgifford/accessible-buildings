@@ -401,10 +401,11 @@ a {
 }
 
 // ---------------------------------------------------------
-// BLOCKQUOTE CONTRAST FIX
+// BLOCKQUOTE & POST-META CONTRAST FIX
 // ---------------------------------------------------------
-// Override minima theme's blockquote styles:
+// Override minima theme's grey text styles:
 // - color: #828282 fails WCAG 2.1 AA (only 3.84:1 on white; requires 4.5:1)
+// - Affects: blockquote, .footer-col-wrapper, .post-meta
 // - font-style: italic is inappropriate for operational callout content
 // Uses var(--text-color) (#111111 light / #e0e0e0 dark) for ≥ 4.5:1 contrast.
 
@@ -416,6 +417,12 @@ blockquote {
   p, li, span, strong, em {
     color: var(--text-color) !important;
   }
+}
+
+// Minima sets .post-meta to #828282 (3.84:1 on white — fails WCAG 2.1 AA).
+// Override to ensure any future post-type pages meet contrast requirements.
+.post-meta {
+  color: var(--text-color) !important;
 }
 
 // ---------------------------------------------------------
