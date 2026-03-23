@@ -116,13 +116,15 @@ a {
 
 // Underline links in body content to satisfy WCAG 1.4.1 (link-in-text-block)
 // This ensures links are distinguishable without relying on color alone.
+// !important is required to override minima theme defaults (consistent with
+// footer and home section link underlines).
 .post-content, .page-content {
   a:not(.button):not([class*="btn"]) {
-    text-decoration: underline;
+    text-decoration: underline !important;
     text-underline-offset: 3px;
 
     &:hover, &:focus {
-      text-decoration-thickness: 2px;
+      text-decoration-thickness: 2px !important;
     }
   }
 }
