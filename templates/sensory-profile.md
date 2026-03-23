@@ -45,8 +45,9 @@ This guide helps visitors with sensory processing needs, including autistic peop
 - **Social Scripts:** [Link to a social script/story for visiting the building]
 - **Audio Navigation Support:** [Text-to-speech available on website for route descriptions, or staff can provide verbal directions]
 
-> [!TIP]
-> **Reading Support:** This page works with browser reading modes (Edge, Safari) for audio navigation. Click the 🔊 Read Aloud button if available.
+<aside class="callout callout-tip" role="note">
+  <p><strong>Tip – Reading Support:</strong> This page works with browser reading modes (Edge, Safari) for audio navigation. Click the 🔊 Read Aloud button if available.</p>
+</aside>
 
 ---
 

@@ -447,6 +447,12 @@ blockquote {
   border-left-color: var(--brand-color);
 }
 
+.callout-note {
+  // rgba(0, 0, 0, 0.04) blended on white ≈ #f6f6f6; #111111 on #f6f6f6 = 17.2:1 ✓
+  background-color: rgba(0, 0, 0, 0.04);
+  border-left-color: #595959; // decorative border only; text uses var(--text-color)
+}
+
 .callout-important {
   // rgba(176, 111, 0, 0.08) blended on white ≈ #fff8ed; #111111 on #fff8ed = 18.3:1 ✓
   background-color: rgba(176, 111, 0, 0.08);

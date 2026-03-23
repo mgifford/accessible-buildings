@@ -45,8 +45,9 @@ permalink: /templates/building-access-guide/
 - **Thresholds:** [Level/Ramped/Small step]
 - **Intercom/Security:** [Height and reach]
 
-> [!IMPORTANT]
-> **Power Door Failure Plan:** In the event of a power door failure, please [call 000-000-000 / use the manual side door].
+<aside class="callout callout-important" role="note">
+  <p><strong>Important – Power Door Failure Plan:</strong> In the event of a power door failure, please [call 000-000-000 / use the manual side door].</p>
+</aside>
 
 ---
 
@@ -80,8 +81,9 @@ permalink: /templates/building-access-guide/
 #### To Lifts
 [Provide clear directions from main entrance with distances and landmarks]
 
-> [!TIP]
-> **Text-to-Speech:** This page works with browser reading modes (Edge, Safari, Chrome extensions). Click the 🔊 Read Aloud button if available.
+<aside class="callout callout-tip" role="note">
+  <p><strong>Tip – Text-to-Speech:</strong> This page works with browser reading modes (Edge, Safari, Chrome extensions). Click the 🔊 Read Aloud button if available.</p>
+</aside>
 
 ---
 

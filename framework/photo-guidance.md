@@ -179,5 +179,6 @@ Photos are particularly valuable for:
 
 ---
 
-> [!TIP]
-> **Balance text and images:** Photos enhance understanding but should never replace detailed text descriptions. Some visitors cannot see images (blind users, screen reader users, low bandwidth situations), so text must always be complete and operational on its own.
+<aside class="callout callout-tip" role="note">
+  <p><strong>Tip – Balance text and images:</strong> Photos enhance understanding but should never replace detailed text descriptions. Some visitors cannot see images (blind users, screen reader users, low bandwidth situations), so text must always be complete and operational on its own.</p>
+</aside>

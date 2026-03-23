@@ -93,8 +93,9 @@ From [starting point], [first action with distance].
 
 ---
 
-> [!TIP]
-> **Test Your Content**: Use browser reading modes to hear how your directions sound when spoken. Adjust phrasing if sentences are too long or confusing when read aloud.
+<aside class="callout callout-tip" role="note">
+  <p><strong>Tip – Test Your Content:</strong> Use browser reading modes to hear how your directions sound when spoken. Adjust phrasing if sentences are too long or confusing when read aloud.</p>
+</aside>
 
 ## Browser Compatibility
 

@@ -43,5 +43,6 @@ For a complete framework on emergency readiness that bridges digital and physica
 
 ---
 
-> [!NOTE]
-> Refer to [EN 301 549 Clause 13](https://accessible.canada.ca/creating-accessibility-standards/canasc-en-301-5492024-accessibility-requirements-ict-products-and-services?mode=full-html#s13) for detailed technical requirements on ICT-based emergency service access.
+<aside class="callout callout-note" role="note">
+  <p><strong>Note:</strong> Refer to <a href="https://accessible.canada.ca/creating-accessibility-standards/canasc-en-301-5492024-accessibility-requirements-ict-products-and-services?mode=full-html#s13">EN 301 549 Clause 13</a> for detailed technical requirements on ICT-based emergency service access.</p>
+</aside>
