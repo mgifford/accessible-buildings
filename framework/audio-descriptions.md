@@ -8,8 +8,9 @@ permalink: /framework/audio-descriptions/
 
 Text and audio descriptions of routes and facilities are essential accessibility features. Many disabled visitors benefit from having information available in audio format, whether through screen readers, text-to-speech tools, or pre-recorded audio.
 
-> [!NOTE]
-> **Try It Yourself:** See our [Audio Navigation Example](/framework/audio-navigation-example/) for a working demonstration of text-to-speech route descriptions. Click the 🔊 Read Aloud button or use your browser's reading mode.
+<aside class="callout callout-note" role="note">
+  <p><strong>Note – Try It Yourself:</strong> See our <a href="/framework/audio-navigation-example/">Audio Navigation Example</a> for a working demonstration of text-to-speech route descriptions. Click the 🔊 Read Aloud button or use your browser's reading mode.</p>
+</aside>
 
 ## Why Audio Matters
 
@@ -228,5 +229,6 @@ Document your audio support in your maintenance checklist:
 
 ---
 
-> [!TIP]
-> **Start Simple:** Begin by ensuring your content works well with browser reading modes. Add enhanced TTS features only after confirming basic accessibility is solid. See our [Audio Navigation Example](/framework/audio-navigation-example/) for a working demonstration.
+<aside class="callout callout-tip" role="note">
+  <p><strong>Tip – Start Simple:</strong> Begin by ensuring your content works well with browser reading modes. Add enhanced TTS features only after confirming basic accessibility is solid. See our <a href="/framework/audio-navigation-example/">Audio Navigation Example</a> for a working demonstration.</p>
+</aside>
