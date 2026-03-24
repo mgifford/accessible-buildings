@@ -3,12 +3,10 @@ name: Axe Accessibility Scan (GitHub Pages)
 # Scans the live GitHub Pages deployment using github/accessibility-scanner (axe-core).
 # Runs after every push to main and on a monthly schedule.
 #
-# Uses the built-in GITHUB_TOKEN (github.token) with issues: write permission
-# to report accessibility violations as GitHub issues.
-#
-# NOTE: cache_key is intentionally omitted. When set, the action tries to push
-# scan results to a gh-cache branch, which fails with a 403 error because
-# github-actions[bot] is denied push access to this repository.
+# Uses the built-in GITHUB_TOKEN (github.token) with issues: write and
+# contents: write permissions. contents: write is required so the accessibility
+# scanner can push cached scan results to the gh-cache branch (without it the
+# action fails with a 403 error).
 
 on:
   push:
@@ -19,7 +17,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   issues: write
 
 jobs:
@@ -31,8 +29,8 @@ jobs:
       - name: Wait for GitHub Pages deployment
         if: github.event_name == 'push'
         run: |
-          echo "Waiting 60 seconds for GitHub Pages to deploy..."
-          sleep 60
+          echo "Waiting 90 seconds for GitHub Pages to deploy..."
+          sleep 90
 
       - name: Run accessibility scanner
         uses: github/accessibility-scanner@v2
@@ -48,3 +46,4 @@ jobs:
             https://mgifford.github.io/accessible-buildings/publishing/governance/
           repository: mgifford/accessible-buildings
           token: ${{ github.token }}
+          cache_key: accessibility-scan-cache
