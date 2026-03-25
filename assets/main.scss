@@ -477,6 +477,19 @@ blockquote {
     color: var(--text-color) !important;
   }
 
+  // Underline links to satisfy WCAG 2.1 SC 1.4.1 (Use of Colour) / axe link-in-text-block.
+  // The brand link color (#1858a8 light / #4da3ff dark) does not meet the 3:1
+  // contrast ratio against surrounding text required by the link-in-text-block rule,
+  // so a non-colour visual distinction (underline) is required.
+  a:not(.button):not([class*="btn"]) {
+    color: var(--brand-color) !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 3px;
+
+    &:hover, &:focus {
+      text-decoration-thickness: 2px !important;
+    }
   // Ensure links inside callouts always use the accessible brand color,
   // not any inherited grey (#828282) from minima's blockquote styles.
   a {
