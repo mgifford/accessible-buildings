@@ -449,6 +449,13 @@ blockquote {
 // Semantic HTML callouts (<aside class="callout callout-tip">) used in
 // place of GFM > [!TIP] alert syntax, which Kramdown renders as plain
 // blockquotes with literal [!TIP] text.
+//
+// This approach specifically prevents the axe color-contrast violation
+// (rule: color-contrast) that occurs when Kramdown renders GFM alert syntax
+// (e.g. > [!IMPORTANT]) as a <blockquote> inheriting minima's #828282 color
+// (3.84:1 on white — below the WCAG 2.1 AA 4.5:1 threshold for normal text).
+// Using <aside class="callout callout-important"> with explicit color overrides
+// ensures the text always meets the 4.5:1 contrast requirement.
 
 .callout {
   border-left: 4px solid var(--brand-color);
@@ -483,6 +490,10 @@ blockquote {
     &:hover, &:focus {
       text-decoration-thickness: 2px !important;
     }
+  // Ensure links inside callouts always use the accessible brand color,
+  // not any inherited grey (#828282) from minima's blockquote styles.
+  a {
+    color: var(--brand-color) !important;
   }
 }
 
