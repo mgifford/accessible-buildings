@@ -49,6 +49,14 @@ This project values transparency about the use of AI in its development. The tab
 - **Content provenance:** Most initial content was generated with AI assistance and has not yet been fully validated against real buildings. See the experimental warning at the top of this file.
 - AI agents contributing to this repository are required by [AGENTS.md](AGENTS.md) to update this table when they add or change features.
 
+## Automation
+
+### JSON-LD Structured Data Generator
+
+Any PR that adds or updates a file in `examples/_examples/` or modifies `templates/building-access-guide.md` will automatically receive a PR comment with a generated schema.org `CivicStructure` + `LocationFeatureSpecification` JSON-LD block. The generated markup is ready to paste into the `<head>` of a published access page.
+
+The generator (`scripts/generate-jsonld.py`) detects eight accessibility features defined in `framework/machine-readable.md`: step-free entrance, accessible toilet, Changing Places toilet, assistive listening system, accessible parking, quiet space, power-assisted doors, and lift. Features default conservatively to `"unknown"` when not mentioned or ambiguous, and only resolve to `"true"` or `"false"` when the guide content is explicit.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
