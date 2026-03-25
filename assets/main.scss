@@ -114,13 +114,21 @@ a {
   }
 }
 
-// Underline links in body content to satisfy WCAG 1.4.1 (link-in-text-block)
-// This ensures links are distinguishable without relying on color alone.
+// Underline links in body content to satisfy WCAG 2.1 SC 1.4.1 (Use of Colour)
+// and the axe link-in-text-block rule.
+//
+// Context: The brand link color (#1858a8 light / #4da3ff dark) does not have
+// the minimum 3:1 contrast ratio required against the surrounding text color
+// (#111111 light / #e0e0e0 dark) for links to be distinguishable by color
+// alone. The underline provides the required non-color visual distinction,
+// satisfying the axe link-in-text-block rule.
+//
 // !important is required to override minima theme defaults (consistent with
 // footer and home section link underlines).
 .post-content, .page-content {
   a:not(.button):not([class*="btn"]) {
     text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
     text-underline-offset: 3px;
 
     &:hover, &:focus {
@@ -358,10 +366,11 @@ a {
     font-weight: 700;
   }
 
-  // Link Distinction (Underline)
+  // Link Distinction (Underline) — satisfies WCAG 2.1 SC 1.4.1
   a {
     color: var(--footer-link) !important;
     text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
     text-underline-offset: 3px;
     
     &:hover, &:focus {
@@ -398,9 +407,10 @@ a {
     max-width: 800px;
   }
   
-  // Underline links in content blocks for clarity
+  // Underline links for WCAG 2.1 SC 1.4.1 (Use of Colour) / link-in-text-block
   a {
     text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
     text-underline-offset: 3px;
     &:hover, &:focus {
       text-decoration-thickness: 2px !important;
