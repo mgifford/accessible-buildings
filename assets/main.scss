@@ -342,8 +342,14 @@ a {
   background-color: var(--footer-bg) !important;
   color: var(--footer-text) !important;
 
-  // Darken footer text and ensure contrast
+  // Darken footer text and ensure contrast.
+  // Explicit overrides for minima theme's .footer-col-wrapper { color: #828282 }
+  // (#828282 = 3.84:1 on white; fails WCAG 2.1 AA; requires 4.5:1).
   p, div {
+    color: var(--footer-text) !important;
+  }
+
+  .footer-col-wrapper {
     color: var(--footer-text) !important;
   }
 
