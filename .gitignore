@@ -8,3 +8,5 @@ Gemfile.lock
 .bundle/
 _site_final/
 _site_temp/
+__pycache__/
+*.pyc
