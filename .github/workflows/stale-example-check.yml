@@ -1,0 +1,50 @@
+name: Stale Example Review Check
+
+on:
+  schedule:
+    # First Monday of each month at 09:00 UTC.
+    # cron does not support "first Monday" directly; the 1-7 day-of-month
+    # range combined with day-of-week 1 (Monday) achieves this.
+    - cron: '0 9 1-7 * 1'
+  workflow_dispatch:
+    inputs:
+      stale_days:
+        description: 'Number of days before an example is considered stale'
+        required: false
+        default: '365'
+        type: string
+      dry_run:
+        description: 'Print what would happen without opening issues'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  stale-check:
+    name: Detect and flag stale building examples
+    runs-on: ubuntu-latest
+
+    env:
+      # Threshold is configurable via workflow_dispatch input or the
+      # STALE_DAYS environment variable; defaults to 365.
+      STALE_DAYS: ${{ inputs.stale_days || '365' }}
+      DRY_RUN: ${{ inputs.dry_run || 'false' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run stale example detection
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          STALE_DAYS: ${{ env.STALE_DAYS }}
+          DRY_RUN: ${{ env.DRY_RUN }}
+        run: python3 scripts/check-stale-examples.py
