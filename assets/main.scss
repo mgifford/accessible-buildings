@@ -490,6 +490,7 @@ blockquote {
     &:hover, &:focus {
       text-decoration-thickness: 2px !important;
     }
+  }
   // Ensure links inside callouts always use the accessible brand color,
   // not any inherited grey (#828282) from minima's blockquote styles.
   a {
