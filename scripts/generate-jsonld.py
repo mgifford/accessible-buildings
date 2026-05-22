@@ -218,7 +218,11 @@ def detect_step_free_entrance(body):
             if not is_placeholder(raw):
                 if re.search(r"\bstep[- ]free\b|\blevel\s+access\b|\bramp\b", raw, re.IGNORECASE):
                     value = "true"
-                elif re.search(r"\bno\s+step[- ]free\b", raw, re.IGNORECASE):
+                elif re.search(
+                    r"\b(?:no|not)\s+step[- ]free\b|\bsteps?\s+only\b",
+                    raw,
+                    re.IGNORECASE,
+                ):
                     value = "false"
 
     # Check for step-free mentions in body text (evaluation files)

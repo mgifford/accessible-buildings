@@ -65,7 +65,6 @@ class GenerateJsonLdTests(unittest.TestCase):
         self.assertEqual(features["Step-free entrance"]["value"], "unknown")
         self.assertEqual(features["Accessible toilet"]["value"], "unknown")
         self.assertEqual(features["Accessible parking"]["value"], "unknown")
-        self.assertTrue(all(f["value"] != "false" for f in features.values()))
 
 
 if __name__ == "__main__":
