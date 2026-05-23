@@ -4,8 +4,8 @@ Validate building example and template files against the 8-point evaluation
 rubric and content rules defined in AGENTS.md.
 
 Usage:
-    python3 scripts/validate-content.py file1.md file2.md ...
-    python3 scripts/validate-content.py --files-from /path/to/list.txt
+    uv run scripts/validate-content.py file1.md file2.md ...
+    uv run scripts/validate-content.py --files-from /path/to/list.txt
 
 Exit codes:
     0  All files pass (or only warnings).

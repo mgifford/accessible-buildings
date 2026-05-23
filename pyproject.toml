@@ -1,0 +1,11 @@
+[project]
+name = "accessible-buildings-python-tools"
+version = "0.1.0"
+description = "Python automation scripts for accessible-buildings"
+requires-python = ">=3.11"
+dependencies = [
+  "PyYAML>=6.0",
+]
+
+[tool.uv]
+managed = true

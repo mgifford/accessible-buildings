@@ -33,10 +33,13 @@ jobs:
           echo "Changed files:"
           cat /tmp/changed-files.txt
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Run completeness validation
         id: validate
         run: |
-          python3 scripts/validate-content.py \
+          uv run scripts/validate-content.py \
             --files-from /tmp/changed-files.txt \
             > /tmp/review-comment.md
           VALIDATE_EXIT=$?

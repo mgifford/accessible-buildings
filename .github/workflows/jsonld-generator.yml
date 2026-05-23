@@ -33,10 +33,13 @@ jobs:
           echo "Changed files:"
           cat /tmp/changed-files.txt
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Generate JSON-LD from access guide
         id: generate
         run: |
-          python3 scripts/generate-jsonld.py \
+          uv run scripts/generate-jsonld.py \
             --files-from /tmp/changed-files.txt \
             > /tmp/jsonld-comment.md
           echo "Generated comment preview:"
