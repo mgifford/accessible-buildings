@@ -53,7 +53,7 @@ This project values transparency about the use of AI in its development. The tab
 
 ### JSON-LD Structured Data Generator
 
-Any PR that adds or updates a file in `examples/_examples/` or modifies `templates/building-access-guide.md` will automatically receive a PR comment with a generated schema.org `CivicStructure` + `LocationFeatureSpecification` JSON-LD block. The generated markup is ready to paste into the `<head>` of a published access page.
+Any PR that adds or updates markdown files under `examples/_examples/**` or modifies `templates/building-access-guide.md` will automatically receive a PR comment with a generated schema.org `CivicStructure` + `LocationFeatureSpecification` JSON-LD block. The generated markup is ready to paste into the `<head>` of a published access page.
 
 The generator (`scripts/generate-jsonld.py`) detects eight accessibility features defined in `framework/machine-readable.md`: step-free entrance, accessible toilet, Changing Places toilet, assistive listening system, accessible parking, quiet space, power-assisted doors, and lift. Features default conservatively to `"unknown"` when not mentioned or ambiguous, and only resolve to `"true"` or `"false"` when the guide content is explicit.
 
@@ -63,6 +63,8 @@ Python automation scripts in `scripts/` now use [uv](https://docs.astral.sh/uv/)
 
 - Run scripts with `uv run`, for example: `uv run scripts/generate-jsonld.py --files-from /tmp/changed-files.txt`
 - CI workflows install uv and execute the same commands for consistent local/CI behavior.
+
+The workflow posts a collapsible PR comment and updates the existing generated comment on re-runs instead of posting duplicates. To extend support, add or adjust detector logic in `scripts/generate-jsonld.py` and add matching fixtures/tests in `scripts/tests/test_generate_jsonld.py`.
 
 ## License
 

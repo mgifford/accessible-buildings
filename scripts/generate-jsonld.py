@@ -125,10 +125,19 @@ def parse_value(raw):
 
     lower = stripped.lower()
 
+    # Ambiguous / conditional wording should remain unknown.
+    if re.search(
+        r"\b(?:on request|if needed|if required|when available|"
+        r"may be|might be|sometimes|occasionally|limited|partial|"
+        r"temporary|depends|subject to)\b",
+        lower,
+    ):
+        return "unknown"
+
     # Explicit negatives
     if re.match(r"^no\b", lower):
         return "false"
-    if lower in ("none", "n/a", "not available", "not applicable", "unavailable"):
+    if lower in ("none", "not available", "unavailable"):
         return "false"
     if re.search(
         r"\bnot\s+(?:available|present|provided|installed|accessible|applicable)\b",
@@ -188,7 +197,7 @@ def get_field_from_summary(body, field_label):
 def detect_step_free_entrance(body):
     """
     Detect step-free entrance.
-    Returns (value, hours_or_None).
+    Returns (value, hours_or_None, description_or_None).
     """
     raw, value = get_field_from_summary(body, "Step-free entrance")
 
@@ -209,7 +218,11 @@ def detect_step_free_entrance(body):
             if not is_placeholder(raw):
                 if re.search(r"\bstep[- ]free\b|\blevel\s+access\b|\bramp\b", raw, re.IGNORECASE):
                     value = "true"
-                elif re.search(r"\bstep\b|\bstairs\b", raw, re.IGNORECASE):
+                elif re.search(
+                    r"\b(?:no|not)\s+step[- ]free\b|\bsteps?\s+only\b",
+                    raw,
+                    re.IGNORECASE,
+                ):
                     value = "false"
 
     # Check for step-free mentions in body text (evaluation files)
@@ -219,17 +232,28 @@ def detect_step_free_entrance(body):
             value = "unknown"  # mentioned but not confirmed
 
     hours = None
+    description = None
     if value == "true":
+        raw_lower = (raw or "").lower()
+        if re.search(r"\b(after\s+hours|appointment|ring|intercom|staff)\b", raw_lower):
+            description = raw
+
         hours_m = re.search(
             r"\b(?:open|available|accessible)\s+(?:from\s+)?(?:Mon(?:day)?|Mo)"
             r"[-–](?:Fri(?:day)?|Fr)\s+\d{1,2}[:.]\d{2}[-–]\d{1,2}[:.]\d{2}",
             body,
             re.IGNORECASE,
         )
+        if not hours_m and raw:
+            hours_m = re.search(
+                r"\b\d{1,2}[:.]\d{2}\s*[-–]\s*\d{1,2}[:.]\d{2}\b",
+                raw,
+                re.IGNORECASE,
+            )
         if hours_m:
             hours = hours_m.group(0)
 
-    return value, hours
+    return value, hours, description
 
 
 def detect_accessible_toilet(body):
@@ -349,6 +373,8 @@ def detect_assistive_listening(body):
         if value == "false":
             return "false", None
         listening_type = _classify_listening_type(raw)
+        if value == "unknown":
+            return "unknown", listening_type
         return "true", listening_type or (raw if len(raw) > 5 else None)
 
     # Fallback: search for hearing loop / induction loop / assistive listening
@@ -431,7 +457,11 @@ def detect_power_doors(body):
                 r"\b(?:automatic|power[- ]assisted|powered)\b", raw, re.IGNORECASE
             ):
                 return "true"
-            if re.search(r"\bmanual\b", raw, re.IGNORECASE):
+            if re.search(
+                r"\b(?:no|not)\s+(?:automatic|power[- ]assisted|powered)\b",
+                raw,
+                re.IGNORECASE,
+            ):
                 return "false"
 
     # Fallback: search full body (excluding placeholder text)
@@ -556,7 +586,7 @@ def process_file(filepath, content):
     building_name = extract_building_name(front_matter, body)
 
     # Detect all features
-    step_free_value, step_free_hours = detect_step_free_entrance(body)
+    step_free_value, step_free_hours, step_free_desc = detect_step_free_entrance(body)
     toilet_value, toilet_desc = detect_accessible_toilet(body)
     changing_places_value, changing_places_desc = detect_changing_places(body)
     parking_value, parking_desc = detect_accessible_parking(body)
@@ -568,6 +598,7 @@ def process_file(filepath, content):
     features = [
         build_amenity_feature(
             "Step-free entrance", step_free_value,
+            description=step_free_desc,
             hours_available=step_free_hours,
         ),
         build_amenity_feature(

@@ -28,6 +28,7 @@ jobs:
           HEAD="${{ github.sha }}"
           git diff --name-only --diff-filter=AM "$BASE" "$HEAD" -- \
             'examples/_examples/*.md' \
+            'examples/_examples/**/*.md' \
             'templates/building-access-guide.md' \
             > /tmp/changed-files.txt
           echo "Changed files:"
