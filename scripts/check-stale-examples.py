@@ -6,7 +6,7 @@ A building example is considered stale when its last_reviewed front-matter
 date is more than STALE_DAYS days in the past (default: 365).
 
 Usage:
-    python3 scripts/check-stale-examples.py
+    uv run scripts/check-stale-examples.py
 
 Environment variables:
     GITHUB_TOKEN        GitHub API token with issues:write permission.

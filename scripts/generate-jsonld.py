@@ -7,8 +7,8 @@ Reads narrative content and produces a CivicStructure + LocationFeatureSpecifica
 JSON-LD block based on the vocabulary defined in framework/machine-readable.md.
 
 Usage:
-    python3 scripts/generate-jsonld.py file1.md file2.md ...
-    python3 scripts/generate-jsonld.py --files-from /path/to/list.txt
+    uv run scripts/generate-jsonld.py file1.md file2.md ...
+    uv run scripts/generate-jsonld.py --files-from /path/to/list.txt
 
 Output:
     Markdown-formatted PR comment with generated JSON-LD, ready to post.

@@ -41,10 +41,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Run stale example detection
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           STALE_DAYS: ${{ env.STALE_DAYS }}
           DRY_RUN: ${{ env.DRY_RUN }}
-        run: python3 scripts/check-stale-examples.py
+        run: uv run scripts/check-stale-examples.py
